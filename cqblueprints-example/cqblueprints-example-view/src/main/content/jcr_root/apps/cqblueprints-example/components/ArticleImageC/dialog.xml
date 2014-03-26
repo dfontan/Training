@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Title">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <TextB
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enter Title"
+                        name="./title"
+                        xtype="textfield"/>
+                </items>
+            </tab1>
+            <Image
+                jcr:primaryType="cq:Widget"
+                cropParameter="./image/file"
+                ddGroups="[media]"
+                mapParameter="./image/file"
+                name="./image/file"
+                title="Image"
+                xtype="html5smartimage"/>
+            <Text
+                jcr:primaryType="cq:Widget"
+                name="./text"
+                title="Text"
+                xtype="richtext"/>
+            <Align
+                jcr:primaryType="nt:unstructured"
+                title="Alignment"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <download
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select your choice"
+                        fieldLabel="Select your choice"
+                        name="./align"
+                        xtype="radiogroup">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Align Left"
+                                inputValue="left"
+                                name="./align"
+                                xtype="radio"/>
+                            <default
+                                jcr:primaryType="cq:Widget"
+                                checked="{Boolean}true"
+                                fieldLabel="Align Right"
+                                inputValue="right"
+                                name="./align"
+                                xtype="radio"/>
+                        </items>
+                    </download>
+                </items>
+            </Align>
+        </items>
+    </items>
+</jcr:root>
