@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.cqblueprints.example - cqblueprints-example-content</comment>
+<entry key="createdBy">intelligrape</entry>
+<entry key="name">cqblueprints-example-content</entry>
+<entry key="created">2014-03-26T13:09:05.852+0530</entry>
+<entry key="groupId">com.cqblueprints.example</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">blahblah</entry>
+<entry key="description">A CQ content package containing the initial content used during the develop phase. By allowing developers to
+        share content this way, it allows for easier testing during early development.
+
+        Eventually, once the project progresses to QA and/or Production, this module should be deleted. At that point
+        development environments should be seeded with content created in QA and/or Production by creating content
+        packages in those environments.
+
+        During development, the files in this module should be sync'd to your CQ instance using the FileVault command
+        line tool available with CQ. There is also a plugin for Eclipse called "vaultclipse" that can be used instead
+        of the command line tool.</entry>
+<entry key="artifactId">cqblueprints-example-content</entry>
+<entry key="path">/etc/packages/blahblah/cqblueprints-example-content.zip</entry>
+</properties>

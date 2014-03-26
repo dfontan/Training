@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.cqblueprints.example - cqblueprints-example-all</comment>
+<entry key="createdBy">intelligrape</entry>
+<entry key="name">cqblueprints-example-all</entry>
+<entry key="created">2014-03-26T13:09:06.596+0530</entry>
+<entry key="groupId">com.cqblueprints.example</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.cqblueprints.example</entry>
+<entry key="description">Builds a CQ package containing all components of the 'CQ Blueprints Example' project. Useful for making formal
+        releases to QA and production environments for example.</entry>
+<entry key="artifactId">cqblueprints-example-all</entry>
+<entry key="path">/etc/packages/com.cqblueprints.example/cqblueprints-example-all.zip</entry>
+</properties>

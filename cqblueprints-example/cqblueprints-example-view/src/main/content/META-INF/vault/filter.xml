@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/apps/cqblueprints-example">
+        <exclude pattern="/apps/cqblueprints-example/install.*"/>
+        <exclude pattern="/apps/cqblueprints-example/runmodes.*"/>
+    </filter>
+    <filter root="/etc/clientlibs/cqblueprints-example"/>
+	<filter root="/etc/designs/cqblueprints-example">
+        <exclude pattern="/etc/designs/cqblueprints-example/jcr:content.*"/>
+    </filter>
+</workspaceFilter>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>com.cqblueprints.example - cqblueprints-example-view</comment>
+<entry key="createdBy">intelligrape</entry>
+<entry key="name">cqblueprints-example-view</entry>
+<entry key="created">2014-03-26T13:08:47.080+0530</entry>
+<entry key="groupId">com.cqblueprints.example</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.cqblueprints.example</entry>
+<entry key="description">All of the CQ component and template definitions for the 'CQ Blueprints Example' project.
+
+        During development, the files in this module should be sync'd to your CQ instance using the FileVault command
+        line tool available with CQ. There is also a plugin for Eclipse called "vaultclipse" that can be used instead
+        of the command line tool.
+
+        It is recommended that this module not contain any Java code and instead Java code should be placed in either
+        the cqblueprints-example-taglib module or the cqblueprints-example-services module as appropriate.</entry>
+<entry key="artifactId">cqblueprints-example-view</entry>
+<entry key="path">/etc/packages/com.cqblueprints.example/cqblueprints-example-view.zip</entry>
+</properties>

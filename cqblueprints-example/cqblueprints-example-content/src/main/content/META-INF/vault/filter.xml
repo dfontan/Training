@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspaceFilter version="1.0">
+    <filter root="/content/cqblueprints-example"/>
+    <filter root="/content/dam/cqblueprints-example">
+        <!-- exclude pattern=".*/renditions.*"/ -->
+    </filter>
+    <filter root="/etc/designs/cqblueprints-example/jcr:content">
+        <include pattern="/etc/designs/cqblueprints-example/jcr:content(/.*)+"/>
+    </filter>
+</workspaceFilter>
