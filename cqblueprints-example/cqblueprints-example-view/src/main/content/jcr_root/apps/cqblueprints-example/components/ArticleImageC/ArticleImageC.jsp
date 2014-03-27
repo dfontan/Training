@@ -14,7 +14,7 @@
 %>
 <%@include file="/libs/foundation/global.jsp"%>
 <div id='title'>${properties.title}</div>
-<%@include file="/libs/foundation/global.jsp"%>
+<div class='subtitle'>${properties.subtitle}</div>
 
 
 <div class= '${properties.align}'>
@@ -24,6 +24,9 @@
 	%>
 </div>
 
+
 ${properties.text}
+<div style="clear:both" ></div>
+
 
 

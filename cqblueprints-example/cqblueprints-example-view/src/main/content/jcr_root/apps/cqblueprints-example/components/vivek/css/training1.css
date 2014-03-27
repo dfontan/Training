@@ -1,0 +1,36 @@
+#title
+{
+    font-family:"Arial";
+	text-align:center;
+    font-family:"Times New Roman", Times, serif;
+    text-decoration:Underline;
+    font-size:28;
+}
+.right img
+{
+    float:right;
+    height:150px;
+    width:150px;
+}
+.left img
+{
+ 	float:left;
+    height:150px;
+    width:150px;
+
+}
+.clear
+{
+    clear:both;
+}
+.subtitle
+{
+    font-family:"Arial";
+	text-align:center;
+    text-decoration:Italic;
+    font-size:18;
+    font-family:"Times New Roman", Times, serif;
+
+
+} 
+

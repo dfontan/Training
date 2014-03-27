@@ -8,5 +8,5 @@
     <jcr:content
         cq:designPath="/etc/designs/cqblueprints-example"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="Training/components/page/ArticleImage"/>
+        sling:resourceType="cqblueprints-example/components/page/ArticleImage"/>
 </jcr:root>

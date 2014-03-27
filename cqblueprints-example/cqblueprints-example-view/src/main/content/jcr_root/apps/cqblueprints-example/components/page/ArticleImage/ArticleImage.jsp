@@ -5,19 +5,19 @@
   
 
 --%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
+%><%
 %><%@page session="false" %><%
 %>
-<%@include file="/apps/DemoApp/components/init.jsp"%>
+<%@include file="/apps/cqblueprints-example/components/init.jsp"%>
+<%@include file="/apps/cqblueprints-example/components/global.jspx" %>
 <%	
 
     %>
 <html>
     <head>
-		<cq:include path="parsys" resourceType="foundation/components/parsys" />
-      <cq:includeClientLib categories="train" />
+      <cq:includeClientLib categories="train1" />
     </head>
     <body>
-
+		<cq:include path="parsys" resourceType="foundation/components/parsys" />
     </body>
 </html>
