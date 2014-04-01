@@ -1,3 +1,4 @@
+
 function init()
 {
 var xmlhttp;
@@ -13,9 +14,13 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
     {
-    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    document.getElementById("ajax").innerHTML=xmlhttp.responseText;
     }
 }
-xmlhttp.open("GET","",true);
+xmlhttp.open("GET","/bin/service/ajax",true);
 xmlhttp.send();
 }
+
+init();
+
+document.onLoad = init;

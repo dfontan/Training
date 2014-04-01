@@ -6,30 +6,20 @@
     text-decoration:Underline;
     font-size:28;
 }
-.right1 img
+.right img
 {
     float:right;
     height:150px;
     width:150px;
 }
-.left1 img
+.left img
 {
  	float:left;
     height:150px;
     width:150px;
 
 }
-.right 
-{
-    float:right;
 
-}
-.left 
-{
- 	float:left;
-
-
-}
 .clear
 {
     clear:both;

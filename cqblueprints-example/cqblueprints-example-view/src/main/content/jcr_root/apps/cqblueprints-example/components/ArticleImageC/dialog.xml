@@ -49,15 +49,29 @@
                                 xtype="radio"/>
                         </items>
                     </download>
+                    <size
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Size"
+                        heightParameter="./image/height"
+                        widthParameter="./image/width"
+                        xtype="sizefield"/>
+                    <hiddenImageResType
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
                 </items>
             </tab1>
             <Image
                 jcr:primaryType="cq:Widget"
-                cropParameter="./image/file"
+                cropParameter="./image/imageCrop"
                 ddGroups="[media]"
-                fileReference="./image/fileref"
-                mapParameter="./image/file"
-                name="./image/file"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/image"
+                requestSuffix="/image.img.png"
                 title="Image"
                 xtype="html5smartimage"/>
         </items>
