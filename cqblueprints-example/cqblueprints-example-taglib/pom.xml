@@ -83,6 +83,7 @@
     <build>
     
         <plugins>
+        <!-- 
         <plugin>
 	<groupId>org.eclipse.m2e</groupId>
 	<artifactId>lifecycle-mapping</artifactId>
@@ -93,7 +94,7 @@
 				<pluginExecution>
 					<pluginExecutionFilter>
 						<groupId>com.squeakysand.jsp</groupId>
-                <artifactId>jsptld-maven-plugin</artifactId>
+                		<artifactId>jsptld-maven-plugin</artifactId>
 						<versionRange>[1.0,)</versionRange>
 						<goals>
 							<goal>generate</goal>
@@ -107,7 +108,8 @@
 		</lifecycleMappingMetadata>
 	</configuration>
 	</plugin>
-	<!-- 
+	-->
+	
             <plugin>
                 <groupId>com.squeakysand.jsp</groupId>
                 <artifactId>jsptld-maven-plugin</artifactId>
@@ -118,12 +120,12 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal></goal>
+                            <goal>generate</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
-            -->
+            
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
