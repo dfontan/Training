@@ -26,11 +26,11 @@
 <div class= '${ali}'>
     <%
        
-        //Image image = new Image(resource,"image");
+        Image image = new Image(resource,"image");
 
-	//image.setSelector(".img"); 
+	image.setSelector(".img"); 
 //out.println(image);
-  //  image.draw(out);
+    image.draw(out);
 	%>
 </div>
 
