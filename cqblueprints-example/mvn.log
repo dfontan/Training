@@ -1,828 +1,830 @@
-Apache Maven 3.2.1 (ea8b2b07643dbb1b84b6d16e1f08391b666bc1e9; 2014-02-14T23:07:52+05:30)
-Maven home: D:\apache-maven-3.2.1
-Java version: 1.7.0_45, vendor: Oracle Corporation
-Java home: C:\Program Files\Java\jdk1.7.0_45\jre
-Default locale: en_US, platform encoding: Cp1252
-OS name: "windows 7", version: "6.1", arch: "amd64", family: "windows"
-[INFO] Error stacktraces are turned on.
-[DEBUG] Reading global settings from D:\apache-maven-3.2.1\conf\settings.xml
-[DEBUG] Reading user settings from C:\Users\intelligrape\.m2\settings.xml
-[DEBUG] Using local repository at C:\Users\intelligrape\.m2\repository
-[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\intelligrape\.m2\repository
 [INFO] Scanning for projects...
-[DEBUG] Extension realms for project com.cqblueprints.example:parent:pom:1.0.0-SNAPSHOT: (none)
-[DEBUG] Looking up lifecyle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3, ConflictMarker.markTime=1, ConflictMarker.nodeCount=79, ConflictIdSorter.graphTime=2, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=17, ConflictResolver.conflictItemCount=53, DefaultDependencyCollector.collectTime=541, DefaultDependencyCollector.transformTime=28}
-[DEBUG] com.day.jcr.vault:maven-vault-plugin:jar:0.0.10:
-[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0:compile
-[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
-[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
-[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
-[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
-[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
-[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
-[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
-[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
-[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
-[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
-[DEBUG]          junit:junit:jar:3.8.1:test
-[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
-[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
-[DEBUG]    org.apache.maven:maven-archiver:jar:2.3:compile
-[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:1.0-alpha-9:compile
-[DEBUG]          org.codehaus.plexus:plexus-io:jar:1.0-alpha-1:compile
-[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.4.9:compile
-[DEBUG]    org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
-[DEBUG]       org.sonatype.plexus:plexus-cipher:jar:1.4:compile
-[DEBUG]    commons-io:commons-io:jar:1.4:compile
-[DEBUG]    commons-httpclient:commons-httpclient:jar:3.1:compile
-[DEBUG]       commons-logging:commons-logging:jar:1.0.3:compile
-[DEBUG]       commons-codec:commons-codec:jar:1.2:compile
-[DEBUG]    org.slf4j:slf4j-api:jar:1.5.8:compile
-[DEBUG] Created new class realm maven.api
-[DEBUG] Importing foreign packages into class realm maven.api
-[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
-[DEBUG]   Imported: org.apache.maven.exception < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
-[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
-[DEBUG]   Imported: org.apache.maven.repository < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
-[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
-[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
-[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
-[DEBUG]   Imported: org.apache.maven.execution < plexus.core
-[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
-[DEBUG]   Imported: org.apache.maven.usability < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
-[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
-[DEBUG]   Imported: javax.inject.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.settings < plexus.core
-[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
-[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
-[DEBUG]   Imported: org.apache.maven.cli < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
-[DEBUG]   Imported: org.apache.maven.project < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
-[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
-[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
-[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
-[DEBUG]   Imported: org.apache.maven.model < plexus.core
-[DEBUG]   Imported: org.slf4j.* < plexus.core
-[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
-[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
-[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
-[DEBUG] Populating class realm maven.api
-[DEBUG] Created new class realm extension>com.day.jcr.vault:maven-vault-plugin:0.0.10
-[DEBUG] Importing foreign packages into class realm extension>com.day.jcr.vault:maven-vault-plugin:0.0.10
-[DEBUG]   Imported:  < maven.api
-[DEBUG] Populating class realm extension>com.day.jcr.vault:maven-vault-plugin:0.0.10
-[DEBUG]   Included: com.day.jcr.vault:maven-vault-plugin:jar:0.0.10
-[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
-[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
-[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.3
-[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:1.0-alpha-9
-[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:1.0-alpha-1
-[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.4.9
-[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
-[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
-[DEBUG]   Included: commons-io:commons-io:jar:1.4
-[DEBUG]   Included: commons-httpclient:commons-httpclient:jar:3.1
-[DEBUG]   Included: commons-logging:commons-logging:jar:1.0.3
-[DEBUG]   Included: commons-codec:commons-codec:jar:1.2
-[DEBUG]   Included: org.slf4j:slf4j-api:jar:1.5.8
-[DEBUG] Extension realms for project com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT: [ClassRealm[extension>com.day.jcr.vault:maven-vault-plugin:0.0.10, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]]
-[DEBUG] Created new class realm project>com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT
-[DEBUG] Populating class realm project>com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT
-[DEBUG] Looking up lifecyle mappings for packaging content-package from ClassRealm[project>com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=96, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=32, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11, ConflictResolver.conflictItemCount=71, DefaultDependencyCollector.collectTime=353, DefaultDependencyCollector.transformTime=14}
-[DEBUG] org.apache.felix:maven-bundle-plugin:jar:2.3.7:
-[DEBUG]    biz.aQute:bndlib:jar:1.50.0:compile
-[DEBUG]    org.apache.felix:org.apache.felix.bundlerepository:jar:1.6.6:compile
-[DEBUG]       org.osgi:org.osgi.core:jar:4.1.0:compile
-[DEBUG]       org.easymock:easymock:jar:2.4:compile
-[DEBUG]    org.apache.maven:maven-core:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-settings:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.7:compile
-[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.7:compile
-[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
-[DEBUG]       org.apache.maven:maven-profile:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-model:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-artifact:jar:2.0.7:compile
-[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
-[DEBUG]          junit:junit:jar:3.8.1:compile
-[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-project:jar:2.0.7:compile
-[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.7:compile
-[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
-[DEBUG]       org.apache.maven:maven-plugin-api:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.7:compile
-[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
-[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.7:compile
-[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.7:compile
-[DEBUG]       classworlds:classworlds:jar:1.1:compile
-[DEBUG]    org.apache.maven:maven-archiver:jar:2.4.1:compile
-[DEBUG]       org.codehaus.plexus:plexus-archiver:jar:1.0:compile
-[DEBUG]          org.codehaus.plexus:plexus-io:jar:1.0:compile
-[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
-[DEBUG]    org.apache.maven.shared:maven-dependency-tree:jar:1.2:compile
-[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.1:compile
-[DEBUG] Created new class realm extension>org.apache.felix:maven-bundle-plugin:2.3.7
-[DEBUG] Importing foreign packages into class realm extension>org.apache.felix:maven-bundle-plugin:2.3.7
-[DEBUG]   Imported:  < maven.api
-[DEBUG] Populating class realm extension>org.apache.felix:maven-bundle-plugin:2.3.7
-[DEBUG]   Included: org.apache.felix:maven-bundle-plugin:jar:2.3.7
-[DEBUG]   Included: biz.aQute:bndlib:jar:1.50.0
-[DEBUG]   Included: org.apache.felix:org.apache.felix.bundlerepository:jar:1.6.6
-[DEBUG]   Included: org.osgi:org.osgi.core:jar:4.1.0
-[DEBUG]   Included: org.easymock:easymock:jar:2.4
-[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.7
-[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
-[DEBUG]   Included: junit:junit:jar:3.8.1
-[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
-[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
-[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.4.1
-[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:1.0
-[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:1.0
-[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
-[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:1.2
-[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.1
-[DEBUG] Extension realms for project com.cqblueprints.example:cqblueprints-example-services:bundle:1.0.0-SNAPSHOT: [ClassRealm[extension>org.apache.felix:maven-bundle-plugin:2.3.7, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]]
-[DEBUG] Created new class realm project>com.cqblueprints.example:cqblueprints-example-services:1.0.0-SNAPSHOT
-[DEBUG] Populating class realm project>com.cqblueprints.example:cqblueprints-example-services:1.0.0-SNAPSHOT
-[DEBUG] Looking up lifecyle mappings for packaging bundle from ClassRealm[project>com.cqblueprints.example:cqblueprints-example-services:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
-[DEBUG] Extension realms for project com.cqblueprints.example:cqblueprints-example-config:content-package:1.0.0-SNAPSHOT: [ClassRealm[extension>com.day.jcr.vault:maven-vault-plugin:0.0.10, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]]
-[DEBUG] Looking up lifecyle mappings for packaging content-package from ClassRealm[project>com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
-[DEBUG] Extension realms for project com.cqblueprints.example:cqblueprints-example-taglib:bundle:1.0.0-SNAPSHOT: [ClassRealm[extension>org.apache.felix:maven-bundle-plugin:2.3.7, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]]
-[DEBUG] Looking up lifecyle mappings for packaging bundle from ClassRealm[project>com.cqblueprints.example:cqblueprints-example-services:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
-[DEBUG] Extension realms for project com.cqblueprints.example:cqblueprints-example-content:content-package:1.0.0-SNAPSHOT: [ClassRealm[extension>com.day.jcr.vault:maven-vault-plugin:0.0.10, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]]
-[DEBUG] Looking up lifecyle mappings for packaging content-package from ClassRealm[project>com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
-[DEBUG] Extension realms for project com.cqblueprints.example:cqblueprints-example-all:content-package:1.0.0-SNAPSHOT: [ClassRealm[extension>com.day.jcr.vault:maven-vault-plugin:0.0.10, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]]
-[DEBUG] Looking up lifecyle mappings for packaging content-package from ClassRealm[project>com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-all:content-package:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-services:bundle:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-taglib:bundle:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-config:content-package:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-content:content-package:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:parent:pom:1.0.0-SNAPSHOT
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ line 108, column 16
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Build Order:
 [INFO] 
 [INFO] com.cqblueprints.example - parent
+[INFO] com.cqblueprints.example - cqblueprints-example-config
 [INFO] com.cqblueprints.example - cqblueprints-example-view
 [INFO] com.cqblueprints.example - cqblueprints-example-services
-[INFO] com.cqblueprints.example - cqblueprints-example-config
 [INFO] com.cqblueprints.example - cqblueprints-example-taglib
-[INFO] com.cqblueprints.example - cqblueprints-example-content
 [INFO] com.cqblueprints.example - cqblueprints-example-all
-[DEBUG] === REACTOR BUILD PLAN ================================================
-[DEBUG] Project: com.cqblueprints.example:parent:pom:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Project: com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Project: com.cqblueprints.example:cqblueprints-example-services:bundle:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Project: com.cqblueprints.example:cqblueprints-example-config:content-package:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Project: com.cqblueprints.example:cqblueprints-example-taglib:bundle:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Project: com.cqblueprints.example:cqblueprints-example-content:content-package:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Project: com.cqblueprints.example:cqblueprints-example-all:content-package:1.0.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
-[DEBUG] Style:   Regular
-[DEBUG] =======================================================================
+[INFO] com.cqblueprints.example - cqblueprints-example-content
 [INFO] 
 [INFO] Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building com.cqblueprints.example - parent 1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] === PROJECT BUILD PLAN ================================================
-[DEBUG] Project:       com.cqblueprints.example:parent:1.0.0-SNAPSHOT
-[DEBUG] Dependencies (collect): []
-[DEBUG] Dependencies (resolve): []
-[DEBUG] Repositories (dependencies): [adobe-public-releases (http://repo.adobe.com/nexus/content/groups/public, releases), cqblueprints.releases (http://dev.cqblueprints.com/nexus/content/repositories/releases/, releases), central (http://repo.maven.apache.org/maven2, releases)]
-[DEBUG] Repositories (plugins)     : [adobe-public-releases (http://repo.adobe.com/nexus/content/groups/public, releases), cqblueprints.plugins.releases (http://dev.cqblueprints.com/nexus/content/repositories/releases/, releases), central (http://repo.maven.apache.org/maven2, releases)]
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean (default-clean)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <directory default-value="${project.build.directory}"/>
-  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
-  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
-  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
-  <skip default-value="false">${clean.skip}</skip>
-  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
-  <verbose>${clean.verbose}</verbose>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.3.1:install (default-install)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <artifact default-value="${project.artifact}"/>
-  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
-  <createChecksum default-value="false">${createChecksum}</createChecksum>
-  <localRepository>${localRepository}</localRepository>
-  <packaging default-value="${project.packaging}"/>
-  <pomFile default-value="${project.file}"/>
-  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
-</configuration>
-[DEBUG] =======================================================================
 [INFO] 
 [INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ parent ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=15, DefaultDependencyCollector.transformTime=0}
-[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.4.1:
-[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
-[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
-[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1
-[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1
-[DEBUG]   Imported:  < maven.api
-[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1
-[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.4.1
-[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
-[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
-[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.4.1, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]
-[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean' with basic configurator -->
-[DEBUG]   (f) directory = D:\prj\ws1\cqblueprints-example\target
-[DEBUG]   (f) excludeDefaultDirectories = false
-[DEBUG]   (f) failOnError = true
-[DEBUG]   (f) followSymLinks = false
-[DEBUG]   (f) outputDirectory = D:\prj\ws1\cqblueprints-example\target\classes
-[DEBUG]   (f) reportDirectory = D:\prj\ws1\cqblueprints-example\target\site
-[DEBUG]   (f) skip = false
-[DEBUG]   (f) testOutputDirectory = D:\prj\ws1\cqblueprints-example\target\test-classes
-[DEBUG] -- end configuration --
-[DEBUG] Skipping non-existing directory D:\prj\ws1\cqblueprints-example\target
-[DEBUG] Skipping non-existing directory D:\prj\ws1\cqblueprints-example\target\classes
-[DEBUG] Skipping non-existing directory D:\prj\ws1\cqblueprints-example\target\test-classes
-[DEBUG] Skipping non-existing directory D:\prj\ws1\cqblueprints-example\target\site
 [INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install (default-install) @ parent ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=43, DefaultDependencyCollector.transformTime=4}
-[DEBUG] org.apache.maven.plugins:maven-install-plugin:jar:2.3.1:
-[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
-[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
-[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
-[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
-[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
-[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
-[DEBUG]          junit:junit:jar:3.8.1:compile
-[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
-[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
-[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
-[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
-[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
-[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
-[DEBUG]    org.codehaus.plexus:plexus-digest:jar:1.0:compile
-[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1
-[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1
-[DEBUG]   Imported:  < maven.api
-[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1
-[DEBUG]   Included: org.apache.maven.plugins:maven-install-plugin:jar:2.3.1
-[DEBUG]   Included: junit:junit:jar:3.8.1
-[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
-[DEBUG]   Included: org.codehaus.plexus:plexus-digest:jar:1.0
-[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
-[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
-[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
-[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
-[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
-[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.3.1:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.3.1, parent: sun.misc.Launcher$AppClassLoader@1497b7b1]
-[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.3.1:install' with basic configurator -->
-[DEBUG]   (f) artifact = com.cqblueprints.example:parent:pom:1.0.0-SNAPSHOT
-[DEBUG]   (f) attachedArtifacts = []
-[DEBUG]   (f) createChecksum = false
-[DEBUG]   (f) localRepository =        id: local
-      url: file:///C:/Users/intelligrape/.m2/repository/
-   layout: default
-snapshots: [enabled => true, update => always]
- releases: [enabled => true, update => always]
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\1.0.0-SNAPSHOT\parent-1.0.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.cqblueprints.example - cqblueprints-example-config 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: http://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugins/maven-deploy-plugin/maven-metadata.xml
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-config ---
+[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\src\main\resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ cqblueprints-example-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-config ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-config ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-config ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-config ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\surefire-reports
 
-[DEBUG]   (f) packaging = pom
-[DEBUG]   (f) pomFile = D:\prj\ws1\cqblueprints-example\pom.xml
-[DEBUG]   (f) updateReleaseInfo = false
-[DEBUG] -- end configuration --
-[INFO] Installing D:\prj\ws1\cqblueprints-example\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\1.0.0-SNAPSHOT\parent-1.0.0-SNAPSHOT.pom
-[DEBUG] Writing tracking file C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\1.0.0-SNAPSHOT\_remote.repositories
-[DEBUG] Installing com.cqblueprints.example:parent:1.0.0-SNAPSHOT/maven-metadata.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\1.0.0-SNAPSHOT\maven-metadata-local.xml
-[DEBUG] Installing com.cqblueprints.example:parent/maven-metadata.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\maven-metadata-local.xml
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-config ---
+[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-config ---
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-config\1.0.0-SNAPSHOT\cqblueprints-example-config-1.0.0-SNAPSHOT.zip
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-config\1.0.0-SNAPSHOT\cqblueprints-example-config-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-config ---
+[INFO] Installing cqblueprints-example-config (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] cqblueprints-example-config, 1.0.0-SNAPSHOT (15972 bytes)
+[INFO]     Created : Thu, 3 Apr 2014 15:41:03 +0530 by intelligrape
+[INFO]     Modified: -
+[INFO]     Unpacked: Thu, 3 Apr 2014 15:34:00 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints-example/runmodes/config.author/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+- /apps/cqblueprints-example/runmodes/config.author.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+- /apps/cqblueprints-example/runmodes/config.publish/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+- /apps/cqblueprints-example/runmodes/config.publish.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+saving approx 0 nodes... 
+Package imported. 
+Package installed in 25ms.
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building com.cqblueprints.example - cqblueprints-example-view 1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
-[DEBUG] Resolving plugin version for org.apache.maven.plugins:maven-deploy-plugin
-[DEBUG] Could not find metadata org.apache.maven.plugins:maven-deploy-plugin/maven-metadata.xml in local (C:\Users\intelligrape\.m2\repository)
-[DEBUG] Failure to find org.apache.maven.plugins:maven-deploy-plugin/maven-metadata.xml in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced
-[DEBUG] Failure to find org.apache.maven.plugins:maven-deploy-plugin/maven-metadata.xml in http://dev.cqblueprints.com/nexus/content/repositories/releases/ was cached in the local repository, resolution will not be reattempted until the update interval of cqblueprints.plugins.releases has elapsed or updates are forced
-[DEBUG] Skipped remote update check for org.apache.maven.plugins:maven-deploy-plugin/maven-metadata.xml, locally cached metadata up-to-date.
-[DEBUG] Resolved plugin version for org.apache.maven.plugins:maven-deploy-plugin to 2.8.1 from repository central (http://repo.maven.apache.org/maven2, releases)
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] === PROJECT BUILD PLAN ================================================
-[DEBUG] Project:       com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT
-[DEBUG] Dependencies (collect): []
-[DEBUG] Dependencies (resolve): [compile, test]
-[DEBUG] Repositories (dependencies): [adobe-public-releases (http://repo.adobe.com/nexus/content/groups/public, releases), cqblueprints.releases (http://dev.cqblueprints.com/nexus/content/repositories/releases/, releases), central (http://repo.maven.apache.org/maven2, releases)]
-[DEBUG] Repositories (plugins)     : [adobe-public-releases (http://repo.adobe.com/nexus/content/groups/public, releases), cqblueprints.plugins.releases (http://dev.cqblueprints.com/nexus/content/repositories/releases/, releases), central (http://repo.maven.apache.org/maven2, releases)]
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.4.1:clean (default-clean)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <directory default-value="${project.build.directory}"/>
-  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
-  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
-  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
-  <skip default-value="false">${clean.skip}</skip>
-  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
-  <verbose>${clean.verbose}</verbose>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:resources (default-resources)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <buildFilters default-value="${project.build.filters}"/>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <escapeString>${maven.resources.escapeString}</escapeString>
-  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
-  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
-  <project default-value="${project}"/>
-  <resources default-value="${project.resources}"/>
-  <session default-value="${session}"/>
-  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
-  <useBuildFilters default-value="true"/>
-  <useDefaultDelimiters default-value="true"/>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:copy-resources (copy-content-resources)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <buildFilters default-value="${project.build.filters}"/>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <escapeString>${maven.resources.escapeString}</escapeString>
-  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
-  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
-  <outputDirectory>D:\prj\ws1\cqblueprints-example\cqblueprints-example-view\target/vault-work</outputDirectory>
-  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
-  <project default-value="${project}"/>
-  <resources>
-    <resource>
-      <directory>D:\prj\ws1\cqblueprints-example\cqblueprints-example-view/src/main/content</directory>
-      <filtering>true</filtering>
-      <excludes>
-        <exclude>**/.svn</exclude>
-        <exclude>**/.vlt</exclude>
-        <exclude>**/.vltignore</exclude>
-        <exclude>**/.DS_Store</exclude>
-      </excludes>
-    </resource>
-  </resources>
-  <session default-value="${session}"/>
-  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
-  <useBuildFilters default-value="true"/>
-  <useDefaultDelimiters default-value="true"/>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:compile (default-compile)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <basedir default-value="${basedir}"/>
-  <buildDirectory default-value="${project.build.directory}"/>
-  <classpathElements default-value="${project.compileClasspathElements}"/>
-  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
-  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
-  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
-  <debug default-value="true">${maven.compiler.debug}</debug>
-  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <executable>${maven.compiler.executable}</executable>
-  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
-  <fork default-value="false">${maven.compiler.fork}</fork>
-  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
-  <maxmem>${maven.compiler.maxmem}</maxmem>
-  <meminitial>${maven.compiler.meminitial}</meminitial>
-  <optimize default-value="false">${maven.compiler.optimize}</optimize>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <outputFileName>${project.build.finalName}</outputFileName>
-  <projectArtifact default-value="${project.artifact}"/>
-  <session default-value="${session}"/>
-  <showDeprecation default-value="false">true</showDeprecation>
-  <showWarnings default-value="false">true</showWarnings>
-  <source default-value="1.5">1.6</source>
-  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
-  <target default-value="1.5">1.6</target>
-  <verbose default-value="false">${maven.compiler.verbose}</verbose>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:testResources (default-testResources)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <buildFilters default-value="${project.build.filters}"/>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <escapeString>${maven.resources.escapeString}</escapeString>
-  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
-  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
-  <outputDirectory>${project.build.testOutputDirectory}</outputDirectory>
-  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
-  <project default-value="${project}"/>
-  <resources>${project.testResources}</resources>
-  <session default-value="${session}"/>
-  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
-  <useBuildFilters default-value="true"/>
-  <useDefaultDelimiters default-value="true"/>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:2.3.2:testCompile (default-testCompile)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <basedir default-value="${basedir}"/>
-  <buildDirectory default-value="${project.build.directory}"/>
-  <classpathElements default-value="${project.testClasspathElements}"/>
-  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
-  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
-  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
-  <debug default-value="true">${maven.compiler.debug}</debug>
-  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <executable>${maven.compiler.executable}</executable>
-  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
-  <fork default-value="false">${maven.compiler.fork}</fork>
-  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-sources/test-annotations"/>
-  <maxmem>${maven.compiler.maxmem}</maxmem>
-  <meminitial>${maven.compiler.meminitial}</meminitial>
-  <optimize default-value="false">${maven.compiler.optimize}</optimize>
-  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
-  <outputFileName>${project.build.finalName}</outputFileName>
-  <session default-value="${session}"/>
-  <showDeprecation default-value="false">true</showDeprecation>
-  <showWarnings default-value="false">true</showWarnings>
-  <skip>${maven.test.skip}</skip>
-  <source default-value="1.5">1.6</source>
-  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
-  <target default-value="1.5">1.6</target>
-  <testSource>${maven.compiler.testSource}</testSource>
-  <testTarget>${maven.compiler.testTarget}</testTarget>
-  <verbose default-value="false">${maven.compiler.verbose}</verbose>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <argLine>${argLine}</argLine>
-  <basedir default-value="${basedir}"/>
-  <childDelegation default-value="false">${childDelegation}</childDelegation>
-  <classesDirectory default-value="${project.build.outputDirectory}"/>
-  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
-  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
-  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
-  <excludedGroups>${excludedGroups}</excludedGroups>
-  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
-  <failIfNoTests>${failIfNoTests}</failIfNoTests>
-  <forkMode default-value="once">${forkMode}</forkMode>
-  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
-  <groups>${groups}</groups>
-  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
-  <jvm>${jvm}</jvm>
-  <localRepository>${localRepository}</localRepository>
-  <objectFactory>${objectFactory}</objectFactory>
-  <parallel>${parallel}</parallel>
-  <parallelMavenExecution default-value="${session.parallel}"/>
-  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
-  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
-  <pluginDescriptor default-value="${plugin}"/>
-  <printSummary default-value="true">${surefire.printSummary}</printSummary>
-  <project default-value="${project}"/>
-  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
-  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
-  <remoteRepositories>${project.pluginArtifactRepositories}</remoteRepositories>
-  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
-  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
-  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
-  <runOrder default-value="filesystem"/>
-  <session>${session}</session>
-  <skip default-value="false">${maven.test.skip}</skip>
-  <skipExec>${maven.test.skip.exec}</skipExec>
-  <skipTests default-value="false">${skipTests}</skipTests>
-  <test>${test}</test>
-  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
-  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
-  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
-  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
-  <threadCount>${threadCount}</threadCount>
-  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
-  <useFile default-value="true">${surefire.useFile}</useFile>
-  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
-  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
-  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
-  <workingDirectory>${basedir}</workingDirectory>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          com.day.jcr.vault:maven-vault-plugin:0.0.10:package (default-package)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <classesDirectory default-value="${project.build.outputDirectory}"/>
-  <embeddedTarget>${vault.embeddedTarget}</embeddedTarget>
-  <finalName default-value="${project.build.finalName}">${vault.finalName}</finalName>
-  <group default-value="${project.groupId}">${vault.group}</group>
-  <name default-value="${project.artifactId}">${vault.name}</name>
-  <outputDirectory default-value="${project.build.directory}"/>
-  <prefix default-value="">${vault.prefix}</prefix>
-  <project>${project}</project>
-  <requiresRoot default-value="false">${vault.requiresRoot}</requiresRoot>
-  <version default-value="${project.version}">${vault.version}</version>
-  <workDirectory default-value="${project.build.directory}/vault-work"/>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.3.1:install (default-install)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <artifact default-value="${project.artifact}"/>
-  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
-  <createChecksum default-value="false">${createChecksum}</createChecksum>
-  <localRepository>${localRepository}</localRepository>
-  <packaging default-value="${project.packaging}"/>
-  <pomFile default-value="${project.file}"/>
-  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
-</configuration>
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          com.day.jcr.vault:maven-vault-plugin:0.0.10:install (install-package)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <artifact>${vault.artifact}</artifact>
-  <artifactId>${vault.artifactId}</artifactId>
-  <groupId>${vault.groupId}</groupId>
-  <install default-value="true">${vault.install}</install>
-  <localRepository>${localRepository}</localRepository>
-  <name default-value="${project.artifactId}">${vault.name}</name>
-  <packageFile>D:\prj\ws1\cqblueprints-example\cqblueprints-example-view\target/cqblueprints-example-view-1.0.0-SNAPSHOT.zip</packageFile>
-  <packaging default-value="zip">${vault.packaging}</packaging>
-  <password default-value="admin">admin</password>
-  <pomRemoteRepositories>${project.remoteArtifactRepositories}</pomRemoteRepositories>
-  <project>${project}</project>
-  <repositoryId default-value="temp">${vault.repoId}</repositoryId>
-  <repositoryUrl>${vault.repoUrl}</repositoryUrl>
-  <serverId>${vault.serverId}</serverId>
-  <settings>${settings}</settings>
-  <targetURL default-value="http://localhost:4502/crx/packmgr/service.jsp">http://localhost:4502/crx/packmgr/service.jsp</targetURL>
-  <timeout default-value="5">${vault.timeout}</timeout>
-  <useProxy default-value="true">${vault.useProxy}</useProxy>
-  <userId default-value="admin">admin</userId>
-  <verbose default-value="false">true</verbose>
-  <version>${vault.version}</version>
-</configuration>
-[DEBUG] =======================================================================
-[WARNING] The POM for com.adobe.xmp:xmpcore:jar:5.0.20 is missing, no dependency information available
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=120, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=84, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=94, ConflictResolver.conflictItemCount=113, DefaultDependencyCollector.collectTime=667, DefaultDependencyCollector.transformTime=97}
-[DEBUG] com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT
-[DEBUG]    com.day.cq:cq-commons:jar:5.6.4:provided
-[DEBUG]       org.apache.commons:commons-email:jar:1.2:provided
-[DEBUG]          javax.mail:mail:jar:1.4.1:provided
-[DEBUG]          javax.activation:activation:jar:1.1:provided
-[DEBUG]    com.day.cq.wcm:cq-wcm-api:jar:5.6.6:provided
-[DEBUG]    com.day.cq.wcm:cq-wcm-foundation:jar:5.6.4:provided
-[DEBUG]       com.adobe.cq.testing:cq-integration-testing:jar:2.0.58:provided
-[DEBUG]          junit:junit:jar:4.8.2:provided
-[DEBUG]          com.adobe.granite:com.adobe.granite.testing.integration-testing:jar:1.0.28:provided
-[DEBUG]             org.codehaus.jackson:jackson-core-asl:jar:1.5.5:provided
-[DEBUG]             org.codehaus.jackson:jackson-mapper-asl:jar:1.5.5:provided
-[DEBUG]             org.apache.httpcomponents:httpclient:jar:4.0.1:provided
-[DEBUG]                org.apache.httpcomponents:httpcore:jar:4.0.1:provided
-[DEBUG]                commons-logging:commons-logging:jar:1.1.1:provided
-[DEBUG]                commons-codec:commons-codec:jar:1.5:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 1.3 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]             org.apache.sling:org.apache.sling.testing.tools:jar:0.1.1-Rev1080210:provided
-[DEBUG]                org.apache.commons:commons-exec:jar:1.0:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 1.1 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                org.apache.httpcomponents:httpmime:jar:4.1:provided
-[DEBUG]             org.apache.sling:org.apache.sling.commons.json:jar:2.0.6:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 2.0.4-incubator by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]             commons-lang:commons-lang:jar:2.4:provided
-[DEBUG]             org.apache.sling:org.apache.sling.commons.testing:jar:2.0.8:provided
-[DEBUG]                org.apache.sling:org.apache.sling.api:jar:2.4.3-R1488084:provided (scope managed from compile by com.cqblueprints.example:parent:1.0.0-SNAPSHOT) (version managed from 2.1.0 by com.cqblueprints.example:parent:1.0.0-SNAPSHOT)
-[DEBUG]                org.apache.sling:org.apache.sling.jcr.api:jar:2.1.0:provided (scope managed from compile by com.cqblueprints.example:parent:1.0.0-SNAPSHOT) (version managed from 2.0.6 by com.cqblueprints.example:parent:1.0.0-SNAPSHOT)
-[DEBUG]                javax.jcr:jcr:jar:2.0:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                org.apache.jackrabbit:jackrabbit-api:jar:2.5.3:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 2.1.1 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                org.apache.jackrabbit:jackrabbit-jcr-commons:jar:2.5.3:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 2.1.1 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                org.apache.jackrabbit:jackrabbit-core:jar:2.1.1:provided
-[DEBUG]                   concurrent:concurrent:jar:1.3.4:provided
-[DEBUG]                   commons-collections:commons-collections:jar:3.2.1:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                   commons-dbcp:commons-dbcp:jar:1.2.2:provided
-[DEBUG]                      commons-pool:commons-pool:jar:1.3:provided
-[DEBUG]                   org.apache.jackrabbit:jackrabbit-spi-commons:jar:2.5.3:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 2.1.1 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                   org.apache.jackrabbit:jackrabbit-spi:jar:2.5.3:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 2.1.1 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                   org.apache.tika:tika-parsers:jar:1.3-r1436209:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 0.6 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                      org.apache.tika:tika-core:jar:1.3-r1436209:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                      org.gagravarr:vorbis-java-tika:jar:0.1:provided
-[DEBUG]                         org.gagravarr:vorbis-java-core:jar:tests:0.1:provided
-[DEBUG]                      edu.ucar:netcdf:jar:4.2-min:provided
-[DEBUG]                      org.apache.james:apache-mime4j-core:jar:0.7.2:provided
-[DEBUG]                      org.apache.james:apache-mime4j-dom:jar:0.7.2:provided
-[DEBUG]                      org.apache.commons:commons-compress:jar:1.4.1-withoutxz:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 1.4.1 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                      org.bouncycastle:bcmail-jdk15:jar:1.45:provided
-[DEBUG]                      org.bouncycastle:bcprov-jdk15:jar:1.45:provided
-[DEBUG]                      org.apache.poi:poi:jar:3.8:provided
-[DEBUG]                      org.apache.poi:poi-scratchpad:jar:3.8:provided
-[DEBUG]                      org.apache.poi:poi-ooxml:jar:3.8:provided
-[DEBUG]                         org.apache.poi:poi-ooxml-schemas:jar:3.8:provided
-[DEBUG]                            org.apache.xmlbeans:xmlbeans:jar:2.3.0:provided
-[DEBUG]                         dom4j:dom4j:jar:1.6.1:provided
-[DEBUG]                      org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:jar:1.0.1:provided
-[DEBUG]                      org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:provided
-[DEBUG]                      asm:asm:jar:3.1:provided
-[DEBUG]                      com.googlecode.mp4parser:isoparser:jar:1.0-RC-1:provided
-[DEBUG]                         org.aspectj:aspectjrt:jar:1.6.11:provided
-[DEBUG]                      com.drewnoakes:metadata-extractor:jar:2.6.2:provided
-[DEBUG]                         com.adobe.xmp:xmpcore:jar:5.0.20:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 5.1.2 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                         xerces:xercesImpl:jar:2.8.1:provided
-[DEBUG]                            xml-apis:xml-apis:jar:1.3.03:provided
-[DEBUG]                      de.l3s.boilerpipe:boilerpipe:jar:1.1.0:provided
-[DEBUG]                      rome:rome:jar:0.9:provided
-[DEBUG]                         jdom:jdom:jar:1.0:provided
-[DEBUG]                      org.gagravarr:vorbis-java-core:jar:0.1:provided
-[DEBUG]                      com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:provided
-[DEBUG]                   org.apache.pdfbox:pdfbox:jar:1.0.0:provided
-[DEBUG]                      org.apache.pdfbox:fontbox:jar:1.0.0:provided
-[DEBUG]                      org.apache.pdfbox:jempbox:jar:1.0.0:provided
-[DEBUG]                   org.slf4j:slf4j-api:jar:1.6.4:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 1.5.8 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                   org.slf4j:jcl-over-slf4j:jar:1.6.4:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 1.5.8 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                   org.apache.lucene:lucene-core:jar:2.4.1:provided
-[DEBUG]                   org.apache.derby:derby:jar:10.5.3.0_1:provided
-[DEBUG]                commons-io:commons-io:jar:2.4:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 1.4 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                org.apache.sling:org.apache.sling.adapter:jar:2.1.0:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 2.0.4 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]                rhino:js:jar:1.6R6:provided
-[DEBUG]                commons-httpclient:commons-httpclient:jar:3.1:provided
-[DEBUG]                org.slf4j:slf4j-simple:jar:1.5.2:provided
-[DEBUG]                org.jmock:jmock-junit4:jar:2.5.1:provided
-[DEBUG]                   org.jmock:jmock:jar:2.5.1:provided
-[DEBUG]                      org.hamcrest:hamcrest-core:jar:1.1:provided
-[DEBUG]                      org.hamcrest:hamcrest-library:jar:1.1:provided
-[DEBUG]                   junit:junit-dep:jar:4.4:provided
-[DEBUG]             com.adobe.granite:com.adobe.granite.xssprotection:jar:5.5.22:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0) (version managed from 5.5.4 by com.cqblueprints:cqdependencies:5.6.0)
-[DEBUG]          taglibs:standard:jar:1.1.2:provided
-[DEBUG]          javax.servlet:jsp-api:jar:2.0:provided
-[DEBUG]             javax.servlet:servlet-api:jar:2.4:provided (scope managed from compile by com.cqblueprints:cqdependencies:5.6.0)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-view ---
+[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-view ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\src\main\resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ cqblueprints-example-view ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 77 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-view ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-view ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-view ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-view ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-view ---
+[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-view ---
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-view\1.0.0-SNAPSHOT\cqblueprints-example-view-1.0.0-SNAPSHOT.zip
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-view\1.0.0-SNAPSHOT\cqblueprints-example-view-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-view ---
+[INFO] Installing cqblueprints-example-view (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] cqblueprints-example-view, 1.0.0-SNAPSHOT (62957 bytes)
+[INFO]     Created : Thu, 3 Apr 2014 15:41:04 +0530 by intelligrape
+[INFO]     Modified: -
+[INFO]     Unpacked: Thu, 3 Apr 2014 15:34:00 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints-example/components/ArticleImageC
+- /apps/cqblueprints-example/components/ArticleImageC/ArticleImageC.jsp
+- /apps/cqblueprints-example/components/ArticleImageC/dialog
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/Image
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/Subtitle
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/Text
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/TextB
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/hiddenImageResType
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/size
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items/Left
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items/Right
+- /apps/cqblueprints-example/components/ArticleImageC/html.jsp
+- /apps/cqblueprints-example/components/ArticleImageC/stit.jsp
+- /apps/cqblueprints-example/components/ArticleImageC/tsi.jsp
+- /apps/cqblueprints-example/components/content/TextInherit
+- /apps/cqblueprints-example/components/content/TextInherit/TextInherit.jsp
+- /apps/cqblueprints-example/components/examplecomponent
+- /apps/cqblueprints-example/components/examplecomponent/dialog
+- /apps/cqblueprints-example/components/examplecomponent/dialog/items
+- /apps/cqblueprints-example/components/examplecomponent/dialog/items/items
+- /apps/cqblueprints-example/components/examplecomponent/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/examplecomponent/examplecomponent.jsp
+- /apps/cqblueprints-example/components/examplecomponent2
+- /apps/cqblueprints-example/components/examplecomponent2/dialog
+- /apps/cqblueprints-example/components/examplecomponent2/dialog/items
+- /apps/cqblueprints-example/components/examplecomponent2/dialog/items/items
+- /apps/cqblueprints-example/components/examplecomponent2/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/examplecomponent2/examplecomponent2.jspx
+- /apps/cqblueprints-example/components/examplepage
+- /apps/cqblueprints-example/components/examplepage/body.jsp
+- /apps/cqblueprints-example/components/page/ArticleImage
+- /apps/cqblueprints-example/components/page/ArticleImage/ArticleImage.jsp
+- /apps/cqblueprints-example/components/page/homepageone
+- /apps/cqblueprints-example/components/page/homepageone/body.jsp
+- /apps/cqblueprints-example/components/page/homepageparent
+- /apps/cqblueprints-example/components/page/homepageparent/body.jsp
+- /apps/cqblueprints-example/components/page/homepageparent/footer.jsp
+- /apps/cqblueprints-example/components/page/homepageparent/header.jsp
+- /apps/cqblueprints-example/components/page/homepageparent/homepageparent.jsp
+- /apps/cqblueprints-example/components/sample/html.jsp
+- /apps/cqblueprints-example/components/TextComponent
+- /apps/cqblueprints-example/components/TextComponent/dialog
+- /apps/cqblueprints-example/components/TextComponent/dialog/items
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1/items
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1/items/textBix
+- /apps/cqblueprints-example/components/TextComponent/TextComponent.jsp
+- /apps/cqblueprints-example/components/vivek
+- /apps/cqblueprints-example/components/vivek/css/styles.css
+- /apps/cqblueprints-example/components/vivek/css/training1.css
+- /apps/cqblueprints-example/components/vivek/js/training.js
+- /apps/cqblueprints-example/components/vivek/js/training.js/jcr:content
+- /apps/cqblueprints-example/components/vivek/css.txt
+- /apps/cqblueprints-example/components/vivek/js.txt
+- /apps/cqblueprints-example/components/global.jspx
+- /apps/cqblueprints-example/components/init.jsp
+- /apps/cqblueprints-example/components/text.jsp
+- /apps/cqblueprints-example/templates/exampletemplate
+- /apps/cqblueprints-example/templates/exampletemplate/jcr:content
+- /apps/cqblueprints-example/templates/Homepageexp
+- /apps/cqblueprints-example/templates/Homepageexp/jcr:content
+- /etc/designs/cqblueprints-example
+A /etc/designs/cqblueprints-example/jcr:content/ArticleImage
+A /etc/designs/cqblueprints-example/jcr:content/ArticleImage/parsys
+A /etc/designs/cqblueprints-example/jcr:content/ArticleImage/parsys/section
+- /etc/designs/cqblueprints-example/clientlibs
+- /etc/designs/cqblueprints-example/clientlibs/css/styles.css
+- /etc/designs/cqblueprints-example/clientlibs/css/training1.css
+- /etc/designs/cqblueprints-example/clientlibs/js/training.js
+- /etc/designs/cqblueprints-example/clientlibs/js/training.js/jcr:content
+- /etc/designs/cqblueprints-example/clientlibs/css.txt
+- /etc/designs/cqblueprints-example/clientlibs/js.txt
+- /etc/designs/cqblueprints-example/images/overlay.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/metadata
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/related
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/original
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/original/jcr:content
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.319.319.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.48.48.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.web.1280.1280.png
+- /etc/designs/cqblueprints-example/favicon.ico
+- /etc/designs/cqblueprints-example/static.css
+saving approx 3 nodes... 
+Package imported. 
+Package installed in 139ms.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.cqblueprints.example - cqblueprints-example-services 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-services ---
+[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-services ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-services ---
+[INFO] Compiling 16 source files to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\classes
+[WARNING] \prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\java\com\Training\EventEndDateProcessor.java:[11,29] [deprecation] JobProcessor in org.apache.sling.event has been deprecated
+[WARNING] \prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\java\com\Training\EventEndDateProcessor.java:[28,59] [deprecation] JobProcessor in org.apache.sling.event has been deprecated
+[WARNING] \prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\java\com\Training\EventEndDateProcessor.java:[25,18] [deprecation] JobProcessor in org.apache.sling.event has been deprecated
+[INFO] 
+[INFO] --- maven-scr-plugin:1.7.4:scr (generate-scr-descriptor) @ cqblueprints-example-services ---
+[INFO] Generating 6 MetaType Descriptors to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\scr-plugin-generated\OSGI-INF\metatype\metatype.xml
+[INFO] Writing abstract service descriptor D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\scr-plugin-generated\OSGI-INF\scr-plugin\scrinfo.xml with 12 entries.
+[INFO] Generating 12 Service Component Descriptors to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\scr-plugin-generated\OSGI-INF\serviceComponents.xml
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-services ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-services ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-services ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cqblueprints-example-services ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-services ---
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\cqblueprints-example-services-1.0.0-SNAPSHOT.jar to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-services\1.0.0-SNAPSHOT\cqblueprints-example-services-1.0.0-SNAPSHOT.jar
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-services\1.0.0-SNAPSHOT\cqblueprints-example-services-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ cqblueprints-example-services ---
+[INFO] Installing com/cqblueprints/example/cqblueprints-example-services/1.0.0-SNAPSHOT/cqblueprints-example-services-1.0.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ cqblueprints-example-services ---
+[INFO] Installing Bundle com.cqblueprints.example.cqblueprints-example-services(D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\cqblueprints-example-services-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/cqblueprints-example/install via PUT
+[INFO] Bundle installed
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.cqblueprints.example - cqblueprints-example-taglib 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-taglib ---
+[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target
+[INFO] 
+[INFO] --- jsptld-maven-plugin:0.4.0:generate (default) @ cqblueprints-example-taglib ---
+[INFO] 
+Loading source files for package com.cqblueprints.example.taglib...
+Loading source files for package com.cqblueprints.example.taglib.osgi...
+Constructing Javadoc information...
+15:41:12.985 INFO  - com.squeakysand.jsp.tldgenerator.TldWriter:write:49 - writing tld to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\classes\META-INF\cqblueprints-example-taglib-1.0.0-SNAPSHOT.tld 
+1 warning
+[WARNING] Javadoc Warnings
+[WARNING] SLF4J: Class path contains multiple SLF4J bindings.
+[WARNING] SLF4J: Found binding in [jar:file:/C:/Users/intelligrape/.m2/repository/org/slf4j/slf4j-log4j12/1.5.8/slf4j-log4j12-1.5.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[WARNING] SLF4J: Found binding in [jar:file:/C:/Users/intelligrape/.m2/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[WARNING] SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+[WARNING] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-taglib ---
+[INFO] Compiling 2 source files to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-taglib ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-taglib ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-taglib ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cqblueprints-example-taglib ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-taglib ---
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-taglib\1.0.0-SNAPSHOT\cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-taglib\1.0.0-SNAPSHOT\cqblueprints-example-taglib-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ cqblueprints-example-taglib ---
+[INFO] Installing com/cqblueprints/example/cqblueprints-example-taglib/1.0.0-SNAPSHOT/cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
+[INFO] Writing OBR metadata
+[INFO] 
+[INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ cqblueprints-example-taglib ---
+[INFO] Installing Bundle com.cqblueprints.example.cqblueprints-example-taglib(D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/cqblueprints-example/install via PUT
+[INFO] Bundle installed
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.cqblueprints.example - cqblueprints-example-all 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-all ---
+[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-all ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-all ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-all ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-all ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-all ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-all ---
+[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default) @ cqblueprints-example-all ---
+[INFO] Embedding --- Embedded: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-services,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.cqblueprints.example:cqblueprints-example-services:jar:1.0.0-SNAPSHOT -> jcr_root/apps/cqblueprints-example/install/cqblueprints-example-services-1.0.0-SNAPSHOT.jar
+[INFO] Embedding --- Embedded: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-taglib,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.cqblueprints.example:cqblueprints-example-taglib:jar:1.0.0-SNAPSHOT -> jcr_root/apps/cqblueprints-example/install/cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
+[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-config,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.cqblueprints.example:cqblueprints-example-config:content-package:1.0.0-SNAPSHOT -> jcr_root/etc/packages/com.cqblueprints.example/cqblueprints-example-config-1.0.0-SNAPSHOT.zip
+[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-view,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT -> jcr_root/etc/packages/com.cqblueprints.example/cqblueprints-example-view-1.0.0-SNAPSHOT.zip
+[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.taglib,artifactId=cqblueprints-taglib-all,filter=true,excludeTransitive=false ---
+[INFO] Embedding com.cqblueprints.taglib:cqblueprints-taglib-all:zip:5.5.1 -> jcr_root/etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip
+[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-all ---
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-all\1.0.0-SNAPSHOT\cqblueprints-example-all-1.0.0-SNAPSHOT.zip
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-all\1.0.0-SNAPSHOT\cqblueprints-example-all-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-all ---
+[INFO] Installing cqblueprints-example-all (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] cqblueprints-example-all, 1.0.0-SNAPSHOT (6146511 bytes)
+[INFO]     Created : Thu, 3 Apr 2014 15:41:15 +0530 by intelligrape
+[INFO]     Modified: -
+[INFO]     Unpacked: Thu, 3 Apr 2014 15:33:59 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints-example/install/cqblueprints-example-services-1.0.0-SNAPSHOT.jar
+- /apps/cqblueprints-example/install/cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
+- /etc/packages/com.cqblueprints.example/cqblueprints-example-config-1.0.0-SNAPSHOT.zip
+- /etc/packages/com.cqblueprints.example/cqblueprints-example-view-1.0.0-SNAPSHOT.zip
+- /etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT 
+Creating snapshot for package com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /etc
+A /etc/.content.xml
+A /etc/designs
+A /etc/designs/.content.xml
+A /etc/designs/cqblueprints-example
+A /etc/designs/cqblueprints-example/.content.xml
+A /etc/designs/cqblueprints-example/favicon.ico
+A /etc/designs/cqblueprints-example/static.css
+A /etc/designs/cqblueprints-example/clientlibs
+A /etc/designs/cqblueprints-example/clientlibs/.content.xml
+A /etc/designs/cqblueprints-example/clientlibs/css
+A /etc/designs/cqblueprints-example/clientlibs/css/training1.css
+A /etc/designs/cqblueprints-example/clientlibs/css/styles.css
+A /etc/designs/cqblueprints-example/clientlibs/css.txt
+A /etc/designs/cqblueprints-example/clientlibs/js
+A /etc/designs/cqblueprints-example/clientlibs/js/training.js
+A /etc/designs/cqblueprints-example/clientlibs/js/training.js.dir
+A /etc/designs/cqblueprints-example/clientlibs/js/training.js.dir/.content.xml
+A /etc/designs/cqblueprints-example/clientlibs/js.txt
+A /etc/designs/cqblueprints-example/images
+A /etc/designs/cqblueprints-example/images/overlay.png
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/original
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/original.dir
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/original.dir/.content.xml
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.thumbnail.48.48.png
+A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.web.1280.1280.png
+A /etc/designs/cqblueprints-example/images/overlay.png/.content.xml
+A /etc/clientlibs
+A /etc/clientlibs/.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/cqblueprints-example
+A /apps/cqblueprints-example/components
+A /apps/cqblueprints-example/components/global.jspx
+A /apps/cqblueprints-example/components/page
+A /apps/cqblueprints-example/components/page/ArticleImage
+A /apps/cqblueprints-example/components/page/ArticleImage/.content.xml
+A /apps/cqblueprints-example/components/page/ArticleImage/ArticleImage.jsp
+A /apps/cqblueprints-example/components/page/homepageone
+A /apps/cqblueprints-example/components/page/homepageone/.content.xml
+A /apps/cqblueprints-example/components/page/homepageone/body.jsp
+A /apps/cqblueprints-example/components/page/homepageparent
+A /apps/cqblueprints-example/components/page/homepageparent/.content.xml
+A /apps/cqblueprints-example/components/page/homepageparent/homepageparent.jsp
+A /apps/cqblueprints-example/components/page/homepageparent/body.jsp
+A /apps/cqblueprints-example/components/page/homepageparent/footer.jsp
+A /apps/cqblueprints-example/components/page/homepageparent/header.jsp
+A /apps/cqblueprints-example/components/sample
+A /apps/cqblueprints-example/components/sample/html.jsp
+A /apps/cqblueprints-example/components/ArticleImageC
+A /apps/cqblueprints-example/components/ArticleImageC/.content.xml
+A /apps/cqblueprints-example/components/ArticleImageC/ArticleImageC.jsp
+A /apps/cqblueprints-example/components/ArticleImageC/dialog.xml
+A /apps/cqblueprints-example/components/ArticleImageC/html.jsp
+A /apps/cqblueprints-example/components/ArticleImageC/stit.jsp
+A /apps/cqblueprints-example/components/ArticleImageC/tsi.jsp
+A /apps/cqblueprints-example/components/vivek
+A /apps/cqblueprints-example/components/vivek/.content.xml
+A /apps/cqblueprints-example/components/vivek/js
+A /apps/cqblueprints-example/components/vivek/js/training.js
+A /apps/cqblueprints-example/components/vivek/js/training.js.dir
+A /apps/cqblueprints-example/components/vivek/js/training.js.dir/.content.xml
+A /apps/cqblueprints-example/components/vivek/css
+A /apps/cqblueprints-example/components/vivek/css/training1.css
+A /apps/cqblueprints-example/components/vivek/css/styles.css
+A /apps/cqblueprints-example/components/vivek/js.txt
+A /apps/cqblueprints-example/components/vivek/css.txt
+A /apps/cqblueprints-example/components/TextComponent
+A /apps/cqblueprints-example/components/TextComponent/.content.xml
+A /apps/cqblueprints-example/components/TextComponent/dialog.xml
+A /apps/cqblueprints-example/components/TextComponent/TextComponent.jsp
+A /apps/cqblueprints-example/components/init.jsp
+A /apps/cqblueprints-example/components/examplecomponent
+A /apps/cqblueprints-example/components/examplecomponent/.content.xml
+A /apps/cqblueprints-example/components/examplecomponent/dialog.xml
+A /apps/cqblueprints-example/components/examplecomponent/examplecomponent.jsp
+A /apps/cqblueprints-example/components/examplecomponent2
+A /apps/cqblueprints-example/components/examplecomponent2/.content.xml
+A /apps/cqblueprints-example/components/examplecomponent2/dialog.xml
+A /apps/cqblueprints-example/components/examplecomponent2/examplecomponent2.jspx
+A /apps/cqblueprints-example/components/examplepage
+A /apps/cqblueprints-example/components/examplepage/.content.xml
+A /apps/cqblueprints-example/components/examplepage/body.jsp
+A /apps/cqblueprints-example/components/text.jsp
+A /apps/cqblueprints-example/components/content
+A /apps/cqblueprints-example/components/content/TextInherit
+A /apps/cqblueprints-example/components/content/TextInherit/.content.xml
+A /apps/cqblueprints-example/components/content/TextInherit/TextInherit.jsp
+A /apps/cqblueprints-example/templates
+A /apps/cqblueprints-example/templates/exampletemplate
+A /apps/cqblueprints-example/templates/exampletemplate/.content.xml
+A /apps/cqblueprints-example/templates/Homepageexp
+A /apps/cqblueprints-example/templates/Homepageexp/.content.xml
+- Aggregation status: 71 of 66 prepared, 69 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints-example/components/ArticleImageC
+- /apps/cqblueprints-example/components/ArticleImageC/ArticleImageC.jsp
+- /apps/cqblueprints-example/components/ArticleImageC/dialog
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/Image
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/Subtitle
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/Text
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/TextB
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/hiddenImageResType
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/size
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items/Left
+- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items/Right
+- /apps/cqblueprints-example/components/ArticleImageC/html.jsp
+- /apps/cqblueprints-example/components/ArticleImageC/stit.jsp
+- /apps/cqblueprints-example/components/ArticleImageC/tsi.jsp
+- /apps/cqblueprints-example/components/content/TextInherit
+- /apps/cqblueprints-example/components/content/TextInherit/TextInherit.jsp
+- /apps/cqblueprints-example/components/examplecomponent
+- /apps/cqblueprints-example/components/examplecomponent/dialog
+- /apps/cqblueprints-example/components/examplecomponent/dialog/items
+- /apps/cqblueprints-example/components/examplecomponent/dialog/items/items
+- /apps/cqblueprints-example/components/examplecomponent/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/examplecomponent/examplecomponent.jsp
+- /apps/cqblueprints-example/components/examplecomponent2
+- /apps/cqblueprints-example/components/examplecomponent2/dialog
+- /apps/cqblueprints-example/components/examplecomponent2/dialog/items
+- /apps/cqblueprints-example/components/examplecomponent2/dialog/items/items
+- /apps/cqblueprints-example/components/examplecomponent2/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/examplecomponent2/examplecomponent2.jspx
+- /apps/cqblueprints-example/components/examplepage
+- /apps/cqblueprints-example/components/examplepage/body.jsp
+- /apps/cqblueprints-example/components/page/ArticleImage
+- /apps/cqblueprints-example/components/page/ArticleImage/ArticleImage.jsp
+- /apps/cqblueprints-example/components/page/homepageone
+- /apps/cqblueprints-example/components/page/homepageone/body.jsp
+- /apps/cqblueprints-example/components/page/homepageparent
+- /apps/cqblueprints-example/components/page/homepageparent/body.jsp
+- /apps/cqblueprints-example/components/page/homepageparent/footer.jsp
+- /apps/cqblueprints-example/components/page/homepageparent/header.jsp
+- /apps/cqblueprints-example/components/page/homepageparent/homepageparent.jsp
+- /apps/cqblueprints-example/components/sample/html.jsp
+- /apps/cqblueprints-example/components/TextComponent
+- /apps/cqblueprints-example/components/TextComponent/dialog
+- /apps/cqblueprints-example/components/TextComponent/dialog/items
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1/items
+- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1/items/textBix
+- /apps/cqblueprints-example/components/TextComponent/TextComponent.jsp
+- /apps/cqblueprints-example/components/vivek
+- /apps/cqblueprints-example/components/vivek/css/styles.css
+- /apps/cqblueprints-example/components/vivek/css/training1.css
+- /apps/cqblueprints-example/components/vivek/js/training.js
+- /apps/cqblueprints-example/components/vivek/js/training.js/jcr:content
+- /apps/cqblueprints-example/components/vivek/css.txt
+- /apps/cqblueprints-example/components/vivek/js.txt
+- /apps/cqblueprints-example/components/global.jspx
+- /apps/cqblueprints-example/components/init.jsp
+- /apps/cqblueprints-example/components/text.jsp
+- /apps/cqblueprints-example/templates/exampletemplate
+- /apps/cqblueprints-example/templates/exampletemplate/jcr:content
+- /apps/cqblueprints-example/templates/Homepageexp
+- /apps/cqblueprints-example/templates/Homepageexp/jcr:content
+- /etc/designs/cqblueprints-example
+- /etc/designs/cqblueprints-example/clientlibs
+- /etc/designs/cqblueprints-example/clientlibs/css/styles.css
+- /etc/designs/cqblueprints-example/clientlibs/css/training1.css
+- /etc/designs/cqblueprints-example/clientlibs/js/training.js
+- /etc/designs/cqblueprints-example/clientlibs/js/training.js/jcr:content
+- /etc/designs/cqblueprints-example/clientlibs/css.txt
+- /etc/designs/cqblueprints-example/clientlibs/js.txt
+- /etc/designs/cqblueprints-example/images/overlay.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/metadata
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/related
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/original
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/original/jcr:content
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.319.319.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.48.48.png
+- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.web.1280.1280.png
+- /etc/designs/cqblueprints-example/favicon.ico
+- /etc/designs/cqblueprints-example/static.css
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage com.cqblueprints.example:cqblueprints-example-config:1.0.0-SNAPSHOT 
+Creating snapshot for package com.cqblueprints.example:cqblueprints-example-config:1.0.0-SNAPSHOT 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/cqblueprints-example
+A /apps/cqblueprints-example/runmodes
+A /apps/cqblueprints-example/runmodes/config.author
+A /apps/cqblueprints-example/runmodes/config.author/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
+A /apps/cqblueprints-example/runmodes/config.author.dev
+A /apps/cqblueprints-example/runmodes/config.author.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
+A /apps/cqblueprints-example/runmodes/config.publish
+A /apps/cqblueprints-example/runmodes/config.publish/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
+A /apps/cqblueprints-example/runmodes/config.publish.dev
+A /apps/cqblueprints-example/runmodes/config.publish.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
+- Aggregation status: 11 of 9 prepared, 10 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints-example/runmodes/config.author/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+- /apps/cqblueprints-example/runmodes/config.author.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+- /apps/cqblueprints-example/runmodes/config.publish/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+- /apps/cqblueprints-example/runmodes/config.publish.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
+saving approx 0 nodes... 
+Package imported. 
+Starting extraction of subpackage com.cqblueprints.taglib:cqblueprints-taglib-all:5.5.1 
+Creating snapshot for package com.cqblueprints.taglib:cqblueprints-taglib-all:5.5.1 
+A META-INF
+A META-INF/vault
+A META-INF/vault/config.xml
+A META-INF/vault/filter.xml
+A META-INF/vault/nodetypes.cnd
+A META-INF/vault/properties.xml
+A /.content.xml
+A /apps
+A /apps/.content.xml
+A /apps/cqblueprints
+A /apps/cqblueprints/taglib
+A /apps/cqblueprints/taglib/install
+A /apps/cqblueprints/taglib/install/cqblueprints-taglib-5.5.1.jar
+A /apps/cqblueprints/taglib/install/squeakysand-jcr-taglib-0.3.0-bnd.jar
+A /apps/cqblueprints/taglib/install/squeakysand-jsp-taglib-0.4.0-bnd.jar
+A /apps/cqblueprints/taglib/install/squeakysand-sling-taglib-0.3.0-bnd.jar
+- Aggregation status: 8 of 6 prepared, 7 collected
+A META-INF/vault/definition/.content.xml
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /apps/cqblueprints/taglib/install/cqblueprints-taglib-5.5.1.jar
+- /apps/cqblueprints/taglib/install/squeakysand-jcr-taglib-0.3.0-bnd.jar
+- /apps/cqblueprints/taglib/install/squeakysand-jsp-taglib-0.4.0-bnd.jar
+- /apps/cqblueprints/taglib/install/squeakysand-sling-taglib-0.3.0-bnd.jar
+saving approx 0 nodes... 
+Package imported. 
+Package installed in 1145ms.
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building com.cqblueprints.example - cqblueprints-example-content 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-content ---
+[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-content ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\src\main\resources
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ cqblueprints-example-content ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 19 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-content ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-content ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-content ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-content ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-content ---
+[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\cqblueprints-example-content-1.0.0-SNAPSHOT.zip
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-content ---
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\cqblueprints-example-content-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-content\1.0.0-SNAPSHOT\cqblueprints-example-content-1.0.0-SNAPSHOT.zip
+[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-content\1.0.0-SNAPSHOT\cqblueprints-example-content-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-content ---
+[INFO] Installing cqblueprints-example-content (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\cqblueprints-example-content-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] cqblueprints-example-content, 1.0.0-SNAPSHOT (107394 bytes)
+[INFO]     Created : Thu, 3 Apr 2014 15:41:17 +0530 by intelligrape
+[INFO]     Modified: -
+[INFO]     Unpacked: Thu, 3 Apr 2014 15:34:01 +0530 by admin
+[INFO] 
+[INFO] Installing content...
+Collecting import information... 
+Installing node types... 
+Installing privileges... 
+Importing content... 
+- /content/cqblueprints-example
+- /content/cqblueprints-example/jcr:content
+- /content/cqblueprints-example/home-page
+- /content/cqblueprints-example/home-page/jcr:content
+- /content/cqblueprints-example/home-page/jcr:content/par
+- /content/cqblueprints-example/home-page/jcr:content/par/examplecomponent
+- /content/cqblueprints-example/home-page/jcr:content/par/examplecomponent2
+- /content/cqblueprints-example/home-page/jcr:content/par/image
+- /content/dam/cqblueprints-example
+- /content/dam/cqblueprints-example/jcr:content
+- /content/dam/cqblueprints-example/logo.jpg
+U /content/dam/cqblueprints-example/logo.jpg/jcr:content
+U /content/dam/cqblueprints-example/logo.jpg/jcr:content/metadata
+- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/original
+- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/original/jcr:content
+- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.140.100.png
+- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png
+- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.48.48.png
+- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg
+D /etc/designs/cqblueprints-example/jcr:content/ArticleImage
+- /etc/designs/cqblueprints-example/jcr:content/examplepage
+- /etc/designs/cqblueprints-example/jcr:content/examplepage/par
+- /etc/designs/cqblueprints-example/jcr:content/examplepage/par/section
+saving approx 3 nodes... 
+Package imported. 
+Package installed in 63ms.
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] com.cqblueprints.example - parent ................. SUCCESS [  0.294 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-view  FAILURE [  1.021 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-services  SKIPPED
-[INFO] com.cqblueprints.example - cqblueprints-example-config  SKIPPED
-[INFO] com.cqblueprints.example - cqblueprints-example-taglib  SKIPPED
-[INFO] com.cqblueprints.example - cqblueprints-example-content  SKIPPED
-[INFO] com.cqblueprints.example - cqblueprints-example-all  SKIPPED
+[INFO] com.cqblueprints.example - parent ................. SUCCESS [  0.216 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-config  SUCCESS [  4.640 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-view  SUCCESS [  1.094 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-services  SUCCESS [  4.095 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-taglib  SUCCESS [  5.313 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-all  SUCCESS [  2.199 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-content  SUCCESS [  0.474 s]
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD FAILURE
+[INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.821 s
-[INFO] Finished at: 2014-03-24T15:01:18+05:30
-[INFO] Final Memory: 13M/152M
+[INFO] Total time: 19.893 s
+[INFO] Finished at: 2014-04-03T15:41:17+05:30
+[INFO] Final Memory: 37M/423M
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal on project cqblueprints-example-view: Could not resolve dependencies for project com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT: Failure to find com.adobe.xmp:xmpcore:jar:5.0.20 in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced -> [Help 1]
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal on project cqblueprints-example-view: Could not resolve dependencies for project com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT: Failure to find com.adobe.xmp:xmpcore:jar:5.0.20 in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced
-	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies(LifecycleDependencyResolver.java:220)
-	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.resolveProjectDependencies(LifecycleDependencyResolver.java:127)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.ensureDependenciesAreResolved(MojoExecutor.java:257)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:200)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-Caused by: org.apache.maven.project.DependencyResolutionException: Could not resolve dependencies for project com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT: Failure to find com.adobe.xmp:xmpcore:jar:5.0.20 in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced
-	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:198)
-	at org.apache.maven.lifecycle.internal.LifecycleDependencyResolver.getDependencies(LifecycleDependencyResolver.java:195)
-	... 22 more
-Caused by: org.eclipse.aether.resolution.DependencyResolutionException: Failure to find com.adobe.xmp:xmpcore:jar:5.0.20 in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced
-	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:384)
-	at org.apache.maven.project.DefaultProjectDependenciesResolver.resolve(DefaultProjectDependenciesResolver.java:192)
-	... 23 more
-Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Failure to find com.adobe.xmp:xmpcore:jar:5.0.20 in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:459)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:262)
-	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveDependencies(DefaultRepositorySystem.java:367)
-	... 24 more
-Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to find com.adobe.xmp:xmpcore:jar:5.0.20 in http://repo.adobe.com/nexus/content/groups/public was cached in the local repository, resolution will not be reattempted until the update interval of adobe-public-releases has elapsed or updates are forced
-	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.newException(DefaultUpdateCheckManager.java:232)
-	at org.eclipse.aether.internal.impl.DefaultUpdateCheckManager.checkArtifact(DefaultUpdateCheckManager.java:206)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.gatherDownloads(DefaultArtifactResolver.java:599)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:518)
-	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:436)
-	... 26 more
-[ERROR] 
-[ERROR] 
-[ERROR] For more information about the errors and possible solutions, please read the following articles:
-[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
-[ERROR] 
-[ERROR] After correcting the problems, you can resume the build with the command
-[ERROR]   mvn <goals> -rf :cqblueprints-example-view

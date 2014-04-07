@@ -15,6 +15,7 @@
 <%@include file="/libs/foundation/global.jsp"%>
 <div id='title'>${properties.title}</div>
 <div class='subtitle'>${properties.subtitle}</div>
+
 <c:if test="${properties.align=='right' || properties.align=='' || properties.align==null}">
 	<c:set var="ali" scope="page" value="right"/>
 </c:if>
@@ -24,8 +25,12 @@
 </c:if>
 <div class= '${ali}'>
     <%
-    Image image = new Image(resource, "image");
-    image.draw(out); 
+       
+        //Image image = new Image(resource,"image");
+
+	//image.setSelector(".img"); 
+//out.println(image);
+  //  image.draw(out);
 	%>
 </div>
 

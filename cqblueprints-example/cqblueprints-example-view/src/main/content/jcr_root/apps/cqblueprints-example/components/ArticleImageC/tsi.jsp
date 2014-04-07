@@ -24,8 +24,9 @@
 </c:if>
 <div class= '${ali}'>
     <%
-    Image image = new Image(resource, "image");
-    image.draw(out); 
+   // Image image = new Image(resource, "image");
+   // image.draw(out); 
+    
 	%>
 </div>
 
