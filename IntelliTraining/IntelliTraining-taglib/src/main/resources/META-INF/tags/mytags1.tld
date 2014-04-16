@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" version="2.1">
+	<tlib-version>5.4.0-SNAPSHOT</tlib-version>
+	<short-name>example</short-name>
+	<uri>http://cqblueprints.com/examples/cqblueprints-examples-taglib</uri>
+	<tag>
+		<name>today</name>
+		<tag-class>com.intelligrape.taglib.MyTagHandler</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>linkBuild</name>
+		<tag-class>com.intelligrape.taglib.LinkBuilder</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>DisplayArticle</name>
+		<tag-class>com.intelligrape.taglib.DisplayArticle</tag-class>
+		<body-content>empty</body-content>
+		 
+		<attribute>  
+            <name>path</name>   
+            <required>true</required>  
+        </attribute>  
+        
+	</tag>
+</taglib>

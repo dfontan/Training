@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    itemId="panelid"
+    title="Article Path"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <link
+            jcr:primaryType="nt:unstructured"
+            fieldLabel="Page"
+            name="./pagePath"
+            xtype="pathfield"/>
+        <type
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Select choice to display"
+            name="./type"
+            selectionchanged="function(box, value)&#xa;{&#xa;    box.findParentByType('panel', true).getComponent(&quot;Filtertype&quot;).hide()};"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <small
+                    jcr:primaryType="nt:unstructured"
+                    text="Article"
+                    value="Article"/>
+                <medium
+                    jcr:primaryType="nt:unstructured"
+                    text="Tags"
+                    value="Tags"/>
+            </options>
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                selectionchanged="function(selection, record, path){&#xa; var panel=selection.findParentByType('panel'); &#xa; if(record=='Tags') {&#xa; panel.getComponent(&quot;filterid&quot;).setWidth(320);&#xa; panel.getComponent(&quot;filterid&quot;).show();&#xa; } else{ panel.getComponent(&quot;filterid&quot;).hide(); } }"/>
+        </type>
+        <Filtertype
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Select filter type"
+            hidden="{Boolean}true"
+            itemId="filterid"
+            name="./filter"
+            type="select"
+            width="{Long}100"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <small
+                    jcr:primaryType="nt:unstructured"
+                    text="TestTag"
+                    value="TestTag"/>
+                <medium
+                    jcr:primaryType="nt:unstructured"
+                    text="TestTag2"
+                    value="TestTag2"/>
+            </options>
+        </Filtertype>
+    </items>
+</jcr:root>
