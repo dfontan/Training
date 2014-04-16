@@ -1,22 +1,22 @@
 [INFO] Scanning for projects...
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-all:content-package:1.0.0-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml, line 108, column 16
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-services:bundle:1.0.0-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml, line 108, column 16
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-taglib:bundle:1.0.0-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml, line 108, column 16
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml, line 108, column 16
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-config:content-package:1.0.0-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml, line 108, column 16
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:cqblueprints-example-content:content-package:1.0.0-SNAPSHOT
-[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, D:\prj\Training\Training\cqblueprints-example\pom.xml, line 108, column 16
+[WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ com.cqblueprints.example:parent:1.0.0-SNAPSHOT, C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml, line 108, column 16
 [WARNING] 
 [WARNING] Some problems were encountered while building the effective model for com.cqblueprints.example:parent:pom:1.0.0-SNAPSHOT
 [WARNING] 'dependencyManagement.dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.apache.sling:org.apache.sling.api:jar -> duplicate declaration of version 2.4.3-R1488084 @ line 108, column 16
@@ -42,23 +42,20 @@
 [INFO] Building com.cqblueprints.example - parent 1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ parent ---
-[INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install (default-install) @ parent ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\1.0.0-SNAPSHOT\parent-1.0.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\parent\1.0.0-SNAPSHOT\parent-1.0.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ parent ---
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building com.cqblueprints.example - cqblueprints-example-config 1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 Downloading: http://repo.adobe.com/nexus/content/groups/public/org/apache/maven/plugins/maven-deploy-plugin/maven-metadata.xml
 [INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-config ---
-[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target
-[INFO] 
 [INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-config ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\src\main\resources
+[INFO] skip non existing resourceDirectory C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\src\main\resources
 [INFO] 
 [INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ cqblueprints-example-config ---
 [debug] execute contextualize
@@ -71,14 +68,13 @@ Downloading: http://repo.adobe.com/nexus/content/groups/public/org/apache/maven/
 [INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-config ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\src\test\resources
+[INFO] skip non existing resourceDirectory C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\src\test\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-config ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-config ---
-[INFO] No tests to run.
-[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\surefire-reports
+[INFO] Surefire report directory: C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\target\surefire-reports
 
 -------------------------------------------------------
  T E S T S
@@ -90,18 +86,18 @@ Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-config ---
-[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip
+[INFO] Building jar: C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip
 [INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-config ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-config\1.0.0-SNAPSHOT\cqblueprints-example-config-1.0.0-SNAPSHOT.zip
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-config\1.0.0-SNAPSHOT\cqblueprints-example-config-1.0.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-config\1.0.0-SNAPSHOT\cqblueprints-example-config-1.0.0-SNAPSHOT.zip
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-config\1.0.0-SNAPSHOT\cqblueprints-example-config-1.0.0-SNAPSHOT.pom
 [INFO] 
 [INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-config ---
-[INFO] Installing cqblueprints-example-config (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
-[INFO] cqblueprints-example-config, 1.0.0-SNAPSHOT (15972 bytes)
-[INFO]     Created : Thu, 3 Apr 2014 15:41:03 +0530 by intelligrape
+[INFO] Installing cqblueprints-example-config (C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\target\cqblueprints-example-config-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] cqblueprints-example-config, 1.0.0-SNAPSHOT (15971 bytes)
+[INFO]     Created : Mon, 7 Apr 2014 12:55:54 +0530 by intelligrape
 [INFO]     Modified: -
-[INFO]     Unpacked: Thu, 3 Apr 2014 15:34:00 +0530 by admin
+[INFO]     Unpacked: Mon, 7 Apr 2014 12:43:53 +0530 by admin
 [INFO] 
 [INFO] Installing content...
 Collecting import information... 
@@ -115,38 +111,37 @@ Importing content...
 saving approx 0 nodes... 
 Package imported. 
 Package installed in 25ms.
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-config ---
+[INFO] Deleting C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-config\target
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building com.cqblueprints.example - cqblueprints-example-view 1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-view ---
-[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target
-[INFO] 
 [INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-view ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\src\main\resources
+[INFO] skip non existing resourceDirectory C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\src\main\resources
 [INFO] 
 [INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ cqblueprints-example-view ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 77 resources
+[INFO] Copying 80 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-view ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-view ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\src\test\resources
+[INFO] skip non existing resourceDirectory C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\src\test\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-view ---
-[INFO] Nothing to compile - all classes are up to date
+[INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-view ---
-[INFO] No tests to run.
-[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\surefire-reports
+[INFO] Surefire report directory: C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\target\surefire-reports
 
 -------------------------------------------------------
  T E S T S
@@ -158,18 +153,18 @@ Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO] 
 [INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-view ---
-[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip
+[INFO] Building jar: C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip
 [INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-view ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-view\1.0.0-SNAPSHOT\cqblueprints-example-view-1.0.0-SNAPSHOT.zip
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-view\1.0.0-SNAPSHOT\cqblueprints-example-view-1.0.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-view\1.0.0-SNAPSHOT\cqblueprints-example-view-1.0.0-SNAPSHOT.zip
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-view\1.0.0-SNAPSHOT\cqblueprints-example-view-1.0.0-SNAPSHOT.pom
 [INFO] 
 [INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-view ---
-[INFO] Installing cqblueprints-example-view (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
-[INFO] cqblueprints-example-view, 1.0.0-SNAPSHOT (62957 bytes)
-[INFO]     Created : Thu, 3 Apr 2014 15:41:04 +0530 by intelligrape
+[INFO] Installing cqblueprints-example-view (C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\target\cqblueprints-example-view-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
+[INFO] cqblueprints-example-view, 1.0.0-SNAPSHOT (64623 bytes)
+[INFO]     Created : Mon, 7 Apr 2014 12:55:56 +0530 by intelligrape
 [INFO]     Modified: -
-[INFO]     Unpacked: Thu, 3 Apr 2014 15:34:00 +0530 by admin
+[INFO]     Unpacked: Mon, 7 Apr 2014 12:43:55 +0530 by admin
 [INFO] 
 [INFO] Installing content...
 Collecting import information... 
@@ -222,6 +217,14 @@ Importing content...
 - /apps/cqblueprints-example/components/page/homepageparent/header.jsp
 - /apps/cqblueprints-example/components/page/homepageparent/homepageparent.jsp
 - /apps/cqblueprints-example/components/sample/html.jsp
+- /apps/cqblueprints-example/components/TestCompo
+- /apps/cqblueprints-example/components/TestCompo/dialog
+- /apps/cqblueprints-example/components/TestCompo/dialog/items
+- /apps/cqblueprints-example/components/TestCompo/dialog/items/items
+- /apps/cqblueprints-example/components/TestCompo/dialog/items/items/tab1
+- /apps/cqblueprints-example/components/TestCompo/dialog/items/items/tab1/items
+- /apps/cqblueprints-example/components/TestCompo/dialog/items/items/tab1/items/textBix
+- /apps/cqblueprints-example/components/TestCompo/TestCompo.jsp
 - /apps/cqblueprints-example/components/TextComponent
 - /apps/cqblueprints-example/components/TextComponent/dialog
 - /apps/cqblueprints-example/components/TextComponent/dialog/items
@@ -245,9 +248,6 @@ Importing content...
 - /apps/cqblueprints-example/templates/Homepageexp
 - /apps/cqblueprints-example/templates/Homepageexp/jcr:content
 - /etc/designs/cqblueprints-example
-A /etc/designs/cqblueprints-example/jcr:content/ArticleImage
-A /etc/designs/cqblueprints-example/jcr:content/ArticleImage/parsys
-A /etc/designs/cqblueprints-example/jcr:content/ArticleImage/parsys/section
 - /etc/designs/cqblueprints-example/clientlibs
 - /etc/designs/cqblueprints-example/clientlibs/css/styles.css
 - /etc/designs/cqblueprints-example/clientlibs/css/training1.css
@@ -267,44 +267,35 @@ A /etc/designs/cqblueprints-example/jcr:content/ArticleImage/parsys/section
 - /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.web.1280.1280.png
 - /etc/designs/cqblueprints-example/favicon.ico
 - /etc/designs/cqblueprints-example/static.css
-saving approx 3 nodes... 
+saving approx 0 nodes... 
 Package imported. 
-Package installed in 139ms.
+Package installed in 92ms.
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-view ---
+[INFO] Deleting C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-view\target
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building com.cqblueprints.example - cqblueprints-example-services 1.0.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-services ---
-[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target
-[INFO] 
 [INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-services ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\resources
+[INFO] skip non existing resourceDirectory C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-services\src\main\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-services ---
-[INFO] Compiling 16 source files to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\classes
-[WARNING] \prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\java\com\Training\EventEndDateProcessor.java:[11,29] [deprecation] JobProcessor in org.apache.sling.event has been deprecated
-[WARNING] \prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\java\com\Training\EventEndDateProcessor.java:[28,59] [deprecation] JobProcessor in org.apache.sling.event has been deprecated
-[WARNING] \prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\main\java\com\Training\EventEndDateProcessor.java:[25,18] [deprecation] JobProcessor in org.apache.sling.event has been deprecated
-[INFO] 
-[INFO] --- maven-scr-plugin:1.7.4:scr (generate-scr-descriptor) @ cqblueprints-example-services ---
-[INFO] Generating 6 MetaType Descriptors to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\scr-plugin-generated\OSGI-INF\metatype\metatype.xml
-[INFO] Writing abstract service descriptor D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\scr-plugin-generated\OSGI-INF\scr-plugin\scrinfo.xml with 12 entries.
-[INFO] Generating 12 Service Component Descriptors to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\scr-plugin-generated\OSGI-INF\serviceComponents.xml
+[INFO] Nothing to compile - all classes are up to date
 [INFO] 
 [INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-services ---
 [debug] execute contextualize
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\src\test\resources
+[INFO] skip non existing resourceDirectory C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-services\src\test\resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-services ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-services ---
-[INFO] No tests to run.
-[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\surefire-reports
+[INFO] Surefire report directory: C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-services\target\surefire-reports
 
 -------------------------------------------------------
  T E S T S
@@ -318,513 +309,39 @@ Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 [INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cqblueprints-example-services ---
 [INFO] 
 [INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-services ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\cqblueprints-example-services-1.0.0-SNAPSHOT.jar to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-services\1.0.0-SNAPSHOT\cqblueprints-example-services-1.0.0-SNAPSHOT.jar
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-services\1.0.0-SNAPSHOT\cqblueprints-example-services-1.0.0-SNAPSHOT.pom
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-services\target\cqblueprints-example-services-1.0.0-SNAPSHOT.jar to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-services\1.0.0-SNAPSHOT\cqblueprints-example-services-1.0.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-services\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-services\1.0.0-SNAPSHOT\cqblueprints-example-services-1.0.0-SNAPSHOT.pom
 [INFO] 
 [INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ cqblueprints-example-services ---
 [INFO] Installing com/cqblueprints/example/cqblueprints-example-services/1.0.0-SNAPSHOT/cqblueprints-example-services-1.0.0-SNAPSHOT.jar
 [INFO] Writing OBR metadata
 [INFO] 
 [INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ cqblueprints-example-services ---
-[INFO] Installing Bundle com.cqblueprints.example.cqblueprints-example-services(D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-services\target\cqblueprints-example-services-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/cqblueprints-example/install via PUT
-[INFO] Bundle installed
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building com.cqblueprints.example - cqblueprints-example-taglib 1.0.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-taglib ---
-[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target
-[INFO] 
-[INFO] --- jsptld-maven-plugin:0.4.0:generate (default) @ cqblueprints-example-taglib ---
-[INFO] 
-Loading source files for package com.cqblueprints.example.taglib...
-Loading source files for package com.cqblueprints.example.taglib.osgi...
-Constructing Javadoc information...
-15:41:12.985 INFO  - com.squeakysand.jsp.tldgenerator.TldWriter:write:49 - writing tld to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\classes\META-INF\cqblueprints-example-taglib-1.0.0-SNAPSHOT.tld 
-1 warning
-[WARNING] Javadoc Warnings
-[WARNING] SLF4J: Class path contains multiple SLF4J bindings.
-[WARNING] SLF4J: Found binding in [jar:file:/C:/Users/intelligrape/.m2/repository/org/slf4j/slf4j-log4j12/1.5.8/slf4j-log4j12-1.5.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-[WARNING] SLF4J: Found binding in [jar:file:/C:/Users/intelligrape/.m2/repository/org/slf4j/slf4j-simple/1.5.8/slf4j-simple-1.5.8.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-[WARNING] SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-[WARNING] warning: [options] bootstrap class path not set in conjunction with -source 1.6
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-taglib ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-taglib ---
-[INFO] Compiling 2 source files to D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\classes
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-taglib ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\src\test\resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-taglib ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-taglib ---
-[INFO] No tests to run.
-[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\surefire-reports
-
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-
-Results :
-
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
-
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:bundle (default-bundle) @ cqblueprints-example-taglib ---
-[INFO] 
-[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-taglib ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-taglib\1.0.0-SNAPSHOT\cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-taglib\1.0.0-SNAPSHOT\cqblueprints-example-taglib-1.0.0-SNAPSHOT.pom
-[INFO] 
-[INFO] --- maven-bundle-plugin:2.3.7:install (default-install) @ cqblueprints-example-taglib ---
-[INFO] Installing com/cqblueprints/example/cqblueprints-example-taglib/1.0.0-SNAPSHOT/cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
-[INFO] Writing OBR metadata
-[INFO] 
-[INFO] --- maven-sling-plugin:2.1.0:install (install-bundle) @ cqblueprints-example-taglib ---
-[INFO] Installing Bundle com.cqblueprints.example.cqblueprints-example-taglib(D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-taglib\target\cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/cqblueprints-example/install via PUT
-[INFO] Bundle installed
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building com.cqblueprints.example - cqblueprints-example-all 1.0.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-all ---
-[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-all ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\src\main\resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-all ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-all ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\src\test\resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-all ---
-[INFO] Not compiling test sources
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-all ---
-[INFO] Tests are skipped.
-[INFO] 
-[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-all ---
-[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip
-[INFO] 
-[INFO] --- maven-vault-plugin:0.0.10:package (default) @ cqblueprints-example-all ---
-[INFO] Embedding --- Embedded: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-services,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.cqblueprints.example:cqblueprints-example-services:jar:1.0.0-SNAPSHOT -> jcr_root/apps/cqblueprints-example/install/cqblueprints-example-services-1.0.0-SNAPSHOT.jar
-[INFO] Embedding --- Embedded: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-taglib,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.cqblueprints.example:cqblueprints-example-taglib:jar:1.0.0-SNAPSHOT -> jcr_root/apps/cqblueprints-example/install/cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
-[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-config,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.cqblueprints.example:cqblueprints-example-config:content-package:1.0.0-SNAPSHOT -> jcr_root/etc/packages/com.cqblueprints.example/cqblueprints-example-config-1.0.0-SNAPSHOT.zip
-[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.example,artifactId=cqblueprints-example-view,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.cqblueprints.example:cqblueprints-example-view:content-package:1.0.0-SNAPSHOT -> jcr_root/etc/packages/com.cqblueprints.example/cqblueprints-example-view-1.0.0-SNAPSHOT.zip
-[INFO] Embedding --- Sub Packages: groupId=com.cqblueprints.taglib,artifactId=cqblueprints-taglib-all,filter=true,excludeTransitive=false ---
-[INFO] Embedding com.cqblueprints.taglib:cqblueprints-taglib-all:zip:5.5.1 -> jcr_root/etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip
-[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip
-[INFO] 
-[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-all ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-all\1.0.0-SNAPSHOT\cqblueprints-example-all-1.0.0-SNAPSHOT.zip
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-all\1.0.0-SNAPSHOT\cqblueprints-example-all-1.0.0-SNAPSHOT.pom
-[INFO] 
-[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-all ---
-[INFO] Installing cqblueprints-example-all (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-all\target\cqblueprints-example-all-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
-[INFO] cqblueprints-example-all, 1.0.0-SNAPSHOT (6146511 bytes)
-[INFO]     Created : Thu, 3 Apr 2014 15:41:15 +0530 by intelligrape
-[INFO]     Modified: -
-[INFO]     Unpacked: Thu, 3 Apr 2014 15:33:59 +0530 by admin
-[INFO] 
-[INFO] Installing content...
-Collecting import information... 
-Installing node types... 
-Installing privileges... 
-Importing content... 
-- /apps/cqblueprints-example/install/cqblueprints-example-services-1.0.0-SNAPSHOT.jar
-- /apps/cqblueprints-example/install/cqblueprints-example-taglib-1.0.0-SNAPSHOT.jar
-- /etc/packages/com.cqblueprints.example/cqblueprints-example-config-1.0.0-SNAPSHOT.zip
-- /etc/packages/com.cqblueprints.example/cqblueprints-example-view-1.0.0-SNAPSHOT.zip
-- /etc/packages/com.cqblueprints.taglib/cqblueprints-taglib-all-5.5.1.zip
-saving approx 0 nodes... 
-Package imported. 
-Starting extraction of subpackage com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT 
-Creating snapshot for package com.cqblueprints.example:cqblueprints-example-view:1.0.0-SNAPSHOT 
-A META-INF
-A META-INF/vault
-A META-INF/vault/config.xml
-A META-INF/vault/filter.xml
-A META-INF/vault/nodetypes.cnd
-A META-INF/vault/properties.xml
-A /.content.xml
-A /etc
-A /etc/.content.xml
-A /etc/designs
-A /etc/designs/.content.xml
-A /etc/designs/cqblueprints-example
-A /etc/designs/cqblueprints-example/.content.xml
-A /etc/designs/cqblueprints-example/favicon.ico
-A /etc/designs/cqblueprints-example/static.css
-A /etc/designs/cqblueprints-example/clientlibs
-A /etc/designs/cqblueprints-example/clientlibs/.content.xml
-A /etc/designs/cqblueprints-example/clientlibs/css
-A /etc/designs/cqblueprints-example/clientlibs/css/training1.css
-A /etc/designs/cqblueprints-example/clientlibs/css/styles.css
-A /etc/designs/cqblueprints-example/clientlibs/css.txt
-A /etc/designs/cqblueprints-example/clientlibs/js
-A /etc/designs/cqblueprints-example/clientlibs/js/training.js
-A /etc/designs/cqblueprints-example/clientlibs/js/training.js.dir
-A /etc/designs/cqblueprints-example/clientlibs/js/training.js.dir/.content.xml
-A /etc/designs/cqblueprints-example/clientlibs/js.txt
-A /etc/designs/cqblueprints-example/images
-A /etc/designs/cqblueprints-example/images/overlay.png
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/original
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/original.dir
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/original.dir/.content.xml
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.thumbnail.319.319.png
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.thumbnail.140.100.png
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.thumbnail.48.48.png
-A /etc/designs/cqblueprints-example/images/overlay.png/_jcr_content/renditions/cq5dam.web.1280.1280.png
-A /etc/designs/cqblueprints-example/images/overlay.png/.content.xml
-A /etc/clientlibs
-A /etc/clientlibs/.content.xml
-A /apps
-A /apps/.content.xml
-A /apps/cqblueprints-example
-A /apps/cqblueprints-example/components
-A /apps/cqblueprints-example/components/global.jspx
-A /apps/cqblueprints-example/components/page
-A /apps/cqblueprints-example/components/page/ArticleImage
-A /apps/cqblueprints-example/components/page/ArticleImage/.content.xml
-A /apps/cqblueprints-example/components/page/ArticleImage/ArticleImage.jsp
-A /apps/cqblueprints-example/components/page/homepageone
-A /apps/cqblueprints-example/components/page/homepageone/.content.xml
-A /apps/cqblueprints-example/components/page/homepageone/body.jsp
-A /apps/cqblueprints-example/components/page/homepageparent
-A /apps/cqblueprints-example/components/page/homepageparent/.content.xml
-A /apps/cqblueprints-example/components/page/homepageparent/homepageparent.jsp
-A /apps/cqblueprints-example/components/page/homepageparent/body.jsp
-A /apps/cqblueprints-example/components/page/homepageparent/footer.jsp
-A /apps/cqblueprints-example/components/page/homepageparent/header.jsp
-A /apps/cqblueprints-example/components/sample
-A /apps/cqblueprints-example/components/sample/html.jsp
-A /apps/cqblueprints-example/components/ArticleImageC
-A /apps/cqblueprints-example/components/ArticleImageC/.content.xml
-A /apps/cqblueprints-example/components/ArticleImageC/ArticleImageC.jsp
-A /apps/cqblueprints-example/components/ArticleImageC/dialog.xml
-A /apps/cqblueprints-example/components/ArticleImageC/html.jsp
-A /apps/cqblueprints-example/components/ArticleImageC/stit.jsp
-A /apps/cqblueprints-example/components/ArticleImageC/tsi.jsp
-A /apps/cqblueprints-example/components/vivek
-A /apps/cqblueprints-example/components/vivek/.content.xml
-A /apps/cqblueprints-example/components/vivek/js
-A /apps/cqblueprints-example/components/vivek/js/training.js
-A /apps/cqblueprints-example/components/vivek/js/training.js.dir
-A /apps/cqblueprints-example/components/vivek/js/training.js.dir/.content.xml
-A /apps/cqblueprints-example/components/vivek/css
-A /apps/cqblueprints-example/components/vivek/css/training1.css
-A /apps/cqblueprints-example/components/vivek/css/styles.css
-A /apps/cqblueprints-example/components/vivek/js.txt
-A /apps/cqblueprints-example/components/vivek/css.txt
-A /apps/cqblueprints-example/components/TextComponent
-A /apps/cqblueprints-example/components/TextComponent/.content.xml
-A /apps/cqblueprints-example/components/TextComponent/dialog.xml
-A /apps/cqblueprints-example/components/TextComponent/TextComponent.jsp
-A /apps/cqblueprints-example/components/init.jsp
-A /apps/cqblueprints-example/components/examplecomponent
-A /apps/cqblueprints-example/components/examplecomponent/.content.xml
-A /apps/cqblueprints-example/components/examplecomponent/dialog.xml
-A /apps/cqblueprints-example/components/examplecomponent/examplecomponent.jsp
-A /apps/cqblueprints-example/components/examplecomponent2
-A /apps/cqblueprints-example/components/examplecomponent2/.content.xml
-A /apps/cqblueprints-example/components/examplecomponent2/dialog.xml
-A /apps/cqblueprints-example/components/examplecomponent2/examplecomponent2.jspx
-A /apps/cqblueprints-example/components/examplepage
-A /apps/cqblueprints-example/components/examplepage/.content.xml
-A /apps/cqblueprints-example/components/examplepage/body.jsp
-A /apps/cqblueprints-example/components/text.jsp
-A /apps/cqblueprints-example/components/content
-A /apps/cqblueprints-example/components/content/TextInherit
-A /apps/cqblueprints-example/components/content/TextInherit/.content.xml
-A /apps/cqblueprints-example/components/content/TextInherit/TextInherit.jsp
-A /apps/cqblueprints-example/templates
-A /apps/cqblueprints-example/templates/exampletemplate
-A /apps/cqblueprints-example/templates/exampletemplate/.content.xml
-A /apps/cqblueprints-example/templates/Homepageexp
-A /apps/cqblueprints-example/templates/Homepageexp/.content.xml
-- Aggregation status: 71 of 66 prepared, 69 collected
-A META-INF/vault/definition/.content.xml
-Collecting import information... 
-Installing node types... 
-Installing privileges... 
-Importing content... 
-- /apps/cqblueprints-example/components/ArticleImageC
-- /apps/cqblueprints-example/components/ArticleImageC/ArticleImageC.jsp
-- /apps/cqblueprints-example/components/ArticleImageC/dialog
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/Image
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/Subtitle
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/Text
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/TextB
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/hiddenImageResType
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/size
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items/Left
-- /apps/cqblueprints-example/components/ArticleImageC/dialog/items/items/tab1/items/download/items/Right
-- /apps/cqblueprints-example/components/ArticleImageC/html.jsp
-- /apps/cqblueprints-example/components/ArticleImageC/stit.jsp
-- /apps/cqblueprints-example/components/ArticleImageC/tsi.jsp
-- /apps/cqblueprints-example/components/content/TextInherit
-- /apps/cqblueprints-example/components/content/TextInherit/TextInherit.jsp
-- /apps/cqblueprints-example/components/examplecomponent
-- /apps/cqblueprints-example/components/examplecomponent/dialog
-- /apps/cqblueprints-example/components/examplecomponent/dialog/items
-- /apps/cqblueprints-example/components/examplecomponent/dialog/items/items
-- /apps/cqblueprints-example/components/examplecomponent/dialog/items/items/tab1
-- /apps/cqblueprints-example/components/examplecomponent/examplecomponent.jsp
-- /apps/cqblueprints-example/components/examplecomponent2
-- /apps/cqblueprints-example/components/examplecomponent2/dialog
-- /apps/cqblueprints-example/components/examplecomponent2/dialog/items
-- /apps/cqblueprints-example/components/examplecomponent2/dialog/items/items
-- /apps/cqblueprints-example/components/examplecomponent2/dialog/items/items/tab1
-- /apps/cqblueprints-example/components/examplecomponent2/examplecomponent2.jspx
-- /apps/cqblueprints-example/components/examplepage
-- /apps/cqblueprints-example/components/examplepage/body.jsp
-- /apps/cqblueprints-example/components/page/ArticleImage
-- /apps/cqblueprints-example/components/page/ArticleImage/ArticleImage.jsp
-- /apps/cqblueprints-example/components/page/homepageone
-- /apps/cqblueprints-example/components/page/homepageone/body.jsp
-- /apps/cqblueprints-example/components/page/homepageparent
-- /apps/cqblueprints-example/components/page/homepageparent/body.jsp
-- /apps/cqblueprints-example/components/page/homepageparent/footer.jsp
-- /apps/cqblueprints-example/components/page/homepageparent/header.jsp
-- /apps/cqblueprints-example/components/page/homepageparent/homepageparent.jsp
-- /apps/cqblueprints-example/components/sample/html.jsp
-- /apps/cqblueprints-example/components/TextComponent
-- /apps/cqblueprints-example/components/TextComponent/dialog
-- /apps/cqblueprints-example/components/TextComponent/dialog/items
-- /apps/cqblueprints-example/components/TextComponent/dialog/items/items
-- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1
-- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1/items
-- /apps/cqblueprints-example/components/TextComponent/dialog/items/items/tab1/items/textBix
-- /apps/cqblueprints-example/components/TextComponent/TextComponent.jsp
-- /apps/cqblueprints-example/components/vivek
-- /apps/cqblueprints-example/components/vivek/css/styles.css
-- /apps/cqblueprints-example/components/vivek/css/training1.css
-- /apps/cqblueprints-example/components/vivek/js/training.js
-- /apps/cqblueprints-example/components/vivek/js/training.js/jcr:content
-- /apps/cqblueprints-example/components/vivek/css.txt
-- /apps/cqblueprints-example/components/vivek/js.txt
-- /apps/cqblueprints-example/components/global.jspx
-- /apps/cqblueprints-example/components/init.jsp
-- /apps/cqblueprints-example/components/text.jsp
-- /apps/cqblueprints-example/templates/exampletemplate
-- /apps/cqblueprints-example/templates/exampletemplate/jcr:content
-- /apps/cqblueprints-example/templates/Homepageexp
-- /apps/cqblueprints-example/templates/Homepageexp/jcr:content
-- /etc/designs/cqblueprints-example
-- /etc/designs/cqblueprints-example/clientlibs
-- /etc/designs/cqblueprints-example/clientlibs/css/styles.css
-- /etc/designs/cqblueprints-example/clientlibs/css/training1.css
-- /etc/designs/cqblueprints-example/clientlibs/js/training.js
-- /etc/designs/cqblueprints-example/clientlibs/js/training.js/jcr:content
-- /etc/designs/cqblueprints-example/clientlibs/css.txt
-- /etc/designs/cqblueprints-example/clientlibs/js.txt
-- /etc/designs/cqblueprints-example/images/overlay.png
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/metadata
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/related
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/original
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/original/jcr:content
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.140.100.png
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.319.319.png
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.thumbnail.48.48.png
-- /etc/designs/cqblueprints-example/images/overlay.png/jcr:content/renditions/cq5dam.web.1280.1280.png
-- /etc/designs/cqblueprints-example/favicon.ico
-- /etc/designs/cqblueprints-example/static.css
-saving approx 0 nodes... 
-Package imported. 
-Starting extraction of subpackage com.cqblueprints.example:cqblueprints-example-config:1.0.0-SNAPSHOT 
-Creating snapshot for package com.cqblueprints.example:cqblueprints-example-config:1.0.0-SNAPSHOT 
-A META-INF
-A META-INF/vault
-A META-INF/vault/config.xml
-A META-INF/vault/filter.xml
-A META-INF/vault/nodetypes.cnd
-A META-INF/vault/properties.xml
-A /.content.xml
-A /apps
-A /apps/.content.xml
-A /apps/cqblueprints-example
-A /apps/cqblueprints-example/runmodes
-A /apps/cqblueprints-example/runmodes/config.author
-A /apps/cqblueprints-example/runmodes/config.author/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
-A /apps/cqblueprints-example/runmodes/config.author.dev
-A /apps/cqblueprints-example/runmodes/config.author.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
-A /apps/cqblueprints-example/runmodes/config.publish
-A /apps/cqblueprints-example/runmodes/config.publish/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
-A /apps/cqblueprints-example/runmodes/config.publish.dev
-A /apps/cqblueprints-example/runmodes/config.publish.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example.xml
-- Aggregation status: 11 of 9 prepared, 10 collected
-A META-INF/vault/definition/.content.xml
-Collecting import information... 
-Installing node types... 
-Installing privileges... 
-Importing content... 
-- /apps/cqblueprints-example/runmodes/config.author/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
-- /apps/cqblueprints-example/runmodes/config.author.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
-- /apps/cqblueprints-example/runmodes/config.publish/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
-- /apps/cqblueprints-example/runmodes/config.publish.dev/org.apache.sling.commons.log.LogManager.factory.config-cqblueprints-example
-saving approx 0 nodes... 
-Package imported. 
-Starting extraction of subpackage com.cqblueprints.taglib:cqblueprints-taglib-all:5.5.1 
-Creating snapshot for package com.cqblueprints.taglib:cqblueprints-taglib-all:5.5.1 
-A META-INF
-A META-INF/vault
-A META-INF/vault/config.xml
-A META-INF/vault/filter.xml
-A META-INF/vault/nodetypes.cnd
-A META-INF/vault/properties.xml
-A /.content.xml
-A /apps
-A /apps/.content.xml
-A /apps/cqblueprints
-A /apps/cqblueprints/taglib
-A /apps/cqblueprints/taglib/install
-A /apps/cqblueprints/taglib/install/cqblueprints-taglib-5.5.1.jar
-A /apps/cqblueprints/taglib/install/squeakysand-jcr-taglib-0.3.0-bnd.jar
-A /apps/cqblueprints/taglib/install/squeakysand-jsp-taglib-0.4.0-bnd.jar
-A /apps/cqblueprints/taglib/install/squeakysand-sling-taglib-0.3.0-bnd.jar
-- Aggregation status: 8 of 6 prepared, 7 collected
-A META-INF/vault/definition/.content.xml
-Collecting import information... 
-Installing node types... 
-Installing privileges... 
-Importing content... 
-- /apps/cqblueprints/taglib/install/cqblueprints-taglib-5.5.1.jar
-- /apps/cqblueprints/taglib/install/squeakysand-jcr-taglib-0.3.0-bnd.jar
-- /apps/cqblueprints/taglib/install/squeakysand-jsp-taglib-0.4.0-bnd.jar
-- /apps/cqblueprints/taglib/install/squeakysand-sling-taglib-0.3.0-bnd.jar
-saving approx 0 nodes... 
-Package imported. 
-Package installed in 1145ms.
-[INFO]                                                                         
-[INFO] ------------------------------------------------------------------------
-[INFO] Building com.cqblueprints.example - cqblueprints-example-content 1.0.0-SNAPSHOT
-[INFO] ------------------------------------------------------------------------
-[INFO] 
-[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ cqblueprints-example-content ---
-[INFO] Deleting D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ cqblueprints-example-content ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\src\main\resources
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:copy-resources (copy-content-resources) @ cqblueprints-example-content ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 19 resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ cqblueprints-example-content ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ cqblueprints-example-content ---
-[debug] execute contextualize
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] skip non existing resourceDirectory D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\src\test\resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ cqblueprints-example-content ---
-[INFO] No sources to compile
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ cqblueprints-example-content ---
-[INFO] No tests to run.
-[INFO] Surefire report directory: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\surefire-reports
-
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-
-Results :
-
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
-
-[INFO] 
-[INFO] --- maven-vault-plugin:0.0.10:package (default-package) @ cqblueprints-example-content ---
-[INFO] Building jar: D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\cqblueprints-example-content-1.0.0-SNAPSHOT.zip
-[INFO] 
-[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ cqblueprints-example-content ---
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\cqblueprints-example-content-1.0.0-SNAPSHOT.zip to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-content\1.0.0-SNAPSHOT\cqblueprints-example-content-1.0.0-SNAPSHOT.zip
-[INFO] Installing D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\pom.xml to C:\Users\intelligrape\.m2\repository\com\cqblueprints\example\cqblueprints-example-content\1.0.0-SNAPSHOT\cqblueprints-example-content-1.0.0-SNAPSHOT.pom
-[INFO] 
-[INFO] --- maven-vault-plugin:0.0.10:install (install-package) @ cqblueprints-example-content ---
-[INFO] Installing cqblueprints-example-content (D:\prj\Training\Training\cqblueprints-example\cqblueprints-example-content\target\cqblueprints-example-content-1.0.0-SNAPSHOT.zip) to http://localhost:4502/crx/packmgr/service.jsp
-[INFO] cqblueprints-example-content, 1.0.0-SNAPSHOT (107394 bytes)
-[INFO]     Created : Thu, 3 Apr 2014 15:41:17 +0530 by intelligrape
-[INFO]     Modified: -
-[INFO]     Unpacked: Thu, 3 Apr 2014 15:34:01 +0530 by admin
-[INFO] 
-[INFO] Installing content...
-Collecting import information... 
-Installing node types... 
-Installing privileges... 
-Importing content... 
-- /content/cqblueprints-example
-- /content/cqblueprints-example/jcr:content
-- /content/cqblueprints-example/home-page
-- /content/cqblueprints-example/home-page/jcr:content
-- /content/cqblueprints-example/home-page/jcr:content/par
-- /content/cqblueprints-example/home-page/jcr:content/par/examplecomponent
-- /content/cqblueprints-example/home-page/jcr:content/par/examplecomponent2
-- /content/cqblueprints-example/home-page/jcr:content/par/image
-- /content/dam/cqblueprints-example
-- /content/dam/cqblueprints-example/jcr:content
-- /content/dam/cqblueprints-example/logo.jpg
-U /content/dam/cqblueprints-example/logo.jpg/jcr:content
-U /content/dam/cqblueprints-example/logo.jpg/jcr:content/metadata
-- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/original
-- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/original/jcr:content
-- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.140.100.png
-- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.319.319.png
-- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.thumbnail.48.48.png
-- /content/dam/cqblueprints-example/logo.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg
-D /etc/designs/cqblueprints-example/jcr:content/ArticleImage
-- /etc/designs/cqblueprints-example/jcr:content/examplepage
-- /etc/designs/cqblueprints-example/jcr:content/examplepage/par
-- /etc/designs/cqblueprints-example/jcr:content/examplepage/par/section
-saving approx 3 nodes... 
-Package imported. 
-Package installed in 63ms.
+[INFO] Installing Bundle com.cqblueprints.example.cqblueprints-example-services(C:\Users\intelligrape\Desktop\CQBlue\Training\cqblueprints-example\cqblueprints-example-services\target\cqblueprints-example-services-1.0.0-SNAPSHOT.jar) to http://localhost:4502/apps/cqblueprints-example/install via PUT
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
 [INFO] 
-[INFO] com.cqblueprints.example - parent ................. SUCCESS [  0.216 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-config  SUCCESS [  4.640 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-view  SUCCESS [  1.094 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-services  SUCCESS [  4.095 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-taglib  SUCCESS [  5.313 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-all  SUCCESS [  2.199 s]
-[INFO] com.cqblueprints.example - cqblueprints-example-content  SUCCESS [  0.474 s]
+[INFO] com.cqblueprints.example - parent ................. SUCCESS [  0.679 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-config  SUCCESS [  7.248 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-view  SUCCESS [  1.584 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-services  FAILURE [  4.918 s]
+[INFO] com.cqblueprints.example - cqblueprints-example-taglib  SKIPPED
+[INFO] com.cqblueprints.example - cqblueprints-example-all  SKIPPED
+[INFO] com.cqblueprints.example - cqblueprints-example-content  SKIPPED
 [INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
+[INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 19.893 s
-[INFO] Finished at: 2014-04-03T15:41:17+05:30
-[INFO] Final Memory: 37M/423M
+[INFO] Total time: 17.289 s
+[INFO] Finished at: 2014-04-07T12:56:01+05:30
+[INFO] Final Memory: 26M/355M
 [INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.sling:maven-sling-plugin:2.1.0:install (install-bundle) on project cqblueprints-example-services: Installation on http://localhost:4502/apps/cqblueprints-example/install failed, cause: Installation failed, cause: Conflict -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :cqblueprints-example-services
