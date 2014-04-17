@@ -75,11 +75,16 @@
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.api</artifactId>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
-
+		-->
+        <dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+	</dependency>
 		<dependency>
 			<groupId>org.apache.sling</groupId>
 			<artifactId>org.apache.sling.scripting.jsp</artifactId>
@@ -143,7 +148,7 @@
 					<instructions>
 						<Bundle-Activator>com.intelligrape.taglib.osgi.Activator</Bundle-Activator>
 						<Include-Resource>
-							META-INF\mytags.tld=${project.build.outputDirectory}/META-INF/mytags.tld,
+							META-INF/mytags.tld=${project.build.outputDirectory}/META-INF/mytags.tld,
 							{maven-resources}
 						</Include-Resource>
 

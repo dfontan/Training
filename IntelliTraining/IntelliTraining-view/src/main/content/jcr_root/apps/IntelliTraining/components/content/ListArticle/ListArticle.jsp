@@ -12,7 +12,7 @@
 <%
 %><%@page session="false" %><%
 %>
-    ---- ${properties.type}<br>s
+    ---- ${properties.type}<br>
   <%
 	List AricleList = (ArrayList) pageContext.getAttribute("articleList");
 	%>

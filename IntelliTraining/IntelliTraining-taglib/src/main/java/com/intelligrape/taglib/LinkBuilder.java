@@ -10,12 +10,15 @@ import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageFilter;
 import com.day.cq.wcm.api.designer.Style;
 import com.day.cq.wcm.foundation.Navigation;
-
+import org.apache.log4j.Logger;
 public class LinkBuilder extends SimpleTagSupport
 {
+	private static final Logger logger = Logger.getLogger(LinkBuilder.class);
+	
 	public void doTag() throws JspException
 	{ 
 		System.out.println("::::::Inside Link Builder :::::::::");
+		logger.warn(":::::This is logger:::::");
 		JspWriter out = getJspContext().getOut();
 	    StringBuilder str=new StringBuilder();
 	    try{  
