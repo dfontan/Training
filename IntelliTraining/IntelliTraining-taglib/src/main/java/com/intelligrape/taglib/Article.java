@@ -2,6 +2,7 @@ package com.intelligrape.taglib;
 
 public class Article
 {
+	
 	String title;
 	String subtitle;
 	String text;

@@ -124,11 +124,11 @@
 		<version>5.6.2</version>
 		<scope>provided</scope>
 	</dependency>
-<dependency>
+<!-- <dependency>
 	    <groupId>log4j</groupId>
 	    <artifactId>log4j</artifactId>
 	    <version>1.2.9</version>
-	</dependency>
+	</dependency> -->
 	<dependency>
 		<groupId>com.day.cq.wcm</groupId>
 		<artifactId>cq-wcm-foundation</artifactId>
@@ -145,6 +145,18 @@
 		<groupId>com.adobe.xmp</groupId>
 		<artifactId>xmpcore</artifactId>
 		<version>5.1.2</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.day.cq</groupId>
+		<artifactId>cq-tagging</artifactId>
+		<version>5.6.4</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.day.cq</groupId>
+		<artifactId>cq-commons</artifactId>
+		<version>5.6.4</version>
 		<scope>provided</scope>
 	</dependency>
 	</dependencies>
@@ -208,8 +220,8 @@
                     <configuration>
                         <showDeprecation>true</showDeprecation>
                         <showWarnings>true</showWarnings>
-                        <source>1.6</source>
-                        <target>1.6</target>
+                        <source>1.7</source>
+                        <target>1.7</target>
                     </configuration>
                 </plugin>
                 <plugin>

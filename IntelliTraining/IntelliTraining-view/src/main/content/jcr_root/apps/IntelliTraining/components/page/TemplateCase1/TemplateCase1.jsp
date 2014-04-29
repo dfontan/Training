@@ -5,18 +5,20 @@
   Component Mapped inside Home Page as primary component
 
 --%><%
-%><%@include file="/libs/foundation/global.jsp"%>
-<%@include file="/apps/cqblueprints-example/components/init.jsp"%>
+%><%@include file="/apps/IntelliTraining/components/global.jsp"%>
+<%@include file="/apps/IntelliTraining/components/init.jsp"%>
 <%
 %><%@page session="false" %><%
-%><%
-	// TODO add you code here
 %>
    
 
 <html>
 	<head>
 		       <cq:includeClientLib categories="trainnew" />
+		       <meta name="description" content="Template Page">
+				<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+				<meta name="author" content="Intelligrape">
+				<meta charset="UTF-8">
     </head>
     <body>
         <div id="ajax"></div>

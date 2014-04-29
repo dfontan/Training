@@ -25,6 +25,11 @@
             <required>true</required>
             <rtexprvalue>true</rtexprvalue>  
         </attribute>
+        <attribute>  
+            <name>noarticles</name>   
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>  
+        </attribute>
         
 	</tag>
 	<tag>
@@ -37,10 +42,11 @@
             <rtexprvalue>true</rtexprvalue>  
         </attribute>
         <attribute>  
-            <name>tagname</name>   
+            <name>operation</name>   
             <required>true</required>
             <rtexprvalue>true</rtexprvalue>  
         </attribute>
+       
         
 	</tag>
 	

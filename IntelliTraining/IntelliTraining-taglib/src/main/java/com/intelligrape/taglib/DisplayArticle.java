@@ -19,12 +19,26 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 public class DisplayArticle extends SimpleTagSupport
 {
 	
 	String path;
+	String noarticles;
+	
+
+	public String getNoarticles() {
+		return noarticles;
+	}
+
+	public void setNoarticles(String noarticles) {
+		this.noarticles = noarticles;
+	}
+
+
 	List<Article> articleList=new ArrayList<Article>();
     public String getPath() {
 		return path;
@@ -33,16 +47,19 @@ public class DisplayArticle extends SimpleTagSupport
 	public void setPath(String path) {
 		this.path = path;
 	}
+	
 
 	public void doTag() throws JspException 
     {  
+		final  Logger logger = LoggerFactory.getLogger(DisplayArticle.class);
 		
         try {  
         	
         	PageContext pageContext = (PageContext) getJspContext();
     		JspWriter out = pageContext.getOut();
-            System.out.println("::::: Inside do start tag :::::");  
-            System.out.println("path is ::: "+path);
+    		logger.info("::::: Inside do start tag :::::");  
+            logger.info("path is ::: "+path);
+            logger.info(":::: No of Articles ::: "+noarticles);
          
         	Map map = new HashMap();
         	map.put("path", path);
@@ -54,33 +71,33 @@ public class DisplayArticle extends SimpleTagSupport
         	Session sess = resource.getResourceResolver().adaptTo(Session.class);
         	QueryBuilder queryBuilder = resource.getResourceResolver().adaptTo(QueryBuilder.class);
         	
-        	System.out.println("resource"+resource);
-        	System.out.println("sess"+sess);
-        	System.out.println("queryBuilder"+queryBuilder);
+        	logger.info("resource"+resource);
+        	logger.info("sess"+sess);
+        	logger.info("queryBuilder"+queryBuilder);
         	
         	com.day.cq.search.Query query = queryBuilder.createQuery(PredicateGroup.create(map), sess);    
-        	query.setHitsPerPage(2);
+        	query.setHitsPerPage(Integer.parseInt(noarticles));
         	SearchResult result = query.getResult();
         	List<Hit> l=result.getHits();
-        	System.out.println("No of pages display "+l.size());
+        	logger.info("No of pages display "+l.size());
         	for(Hit hit : l)
         	{
-        		System.out.println("title ::: "+hit.getNode().getPath());
+        		logger.info("title ::: "+hit.getNode().getPath());
         		Node temp=(Node)hit.getNode();
         		
-        		System.out.println("===========NODE Start=====================");
-        		System.out.println("text :: "+temp.getProperty("text").getString());
-        		System.out.println("title :: "+temp.getProperty("title").getString());
-        		System.out.println("subtitle :: "+temp.getProperty("subtitle").getString());
-        		System.out.println("align :: "+temp.getProperty("align").getString());
+        		logger.info("===========NODE Start=====================");
+        		logger.info("text :: "+temp.getProperty("text").getString());
+        		logger.info("title :: "+temp.getProperty("title").getString());
+        		logger.info("subtitle :: "+temp.getProperty("subtitle").getString());
+        		logger.info("align :: "+temp.getProperty("align").getString());
         		
         		
         			Node image=temp.getNode("image");
         			if(image!=null)
         			{
-        				System.out.println("Image ref :: "+image.getProperty("fileReference").getString());
+        				logger.info("Image ref :: "+image.getProperty("fileReference").getString());
         			}
-        			System.out.println("===========NODE End=====================");
+        			logger.info("===========NODE End=====================");
         		
         			Article article=new Article();
         			article.setTitle(temp.getProperty("title").getString());
@@ -92,7 +109,7 @@ public class DisplayArticle extends SimpleTagSupport
         			
         			
         	}
-        	System.out.println("articleList.size-->"+articleList.size());
+        	logger.info("articleList.size-->"+articleList.size());
         	pageContext.setAttribute("articleList", articleList);
         	
         	getJspContext().setAttribute("myList", articleList);

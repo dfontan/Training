@@ -1,5 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:EditConfig">
     <listener jcr:primaryType="cq:EditListenersConfig"/>
+    <dialog
+        jcr:primaryType="cq:Dialog"
+        itemId="panelid"
+        title="Article Path"
+        xtype="panel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <link
+                jcr:primaryType="nt:unstructured"
+                fieldLabel="Page"
+                name="./pagePath"
+                xtype="pathfield"/>
+            <type
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Select choice to display"
+                name="./type"
+                type="select"
+                xtype="selection">
+                <options jcr:primaryType="cq:WidgetCollection">
+                    <small
+                        jcr:primaryType="nt:unstructured"
+                        text="Article"
+                        value="Article"/>
+                    <medium
+                        jcr:primaryType="nt:unstructured"
+                        text="Tags"
+                        value="Tags"/>
+                </options>
+                <listeners
+                    jcr:primaryType="nt:unstructured"
+                    selectionchanged=" function(selection, record, path)&#xa;{&#xa; var panel=selection.findParentByType('panel');&#xa; if(record=='Tags') &#xa; { &#xa; panel.getComponent(&quot;filterid&quot;).setWidth(400);&#xa; panel.getComponent(&quot;filterid&quot;).show(); &#xa; panel.getComponent(&quot;numartid&quot;).hide(); &#xa; panel.getComponent(&quot;tagsearch&quot;).setWidth(400);&#xa; panel.getComponent(&quot;tagsearch&quot;).show(); &#xa;&#xa; }&#xa; else&#xa; { &#xa; panel.getComponent(&quot;filterid&quot;).hide(); &#xa;  panel.getComponent(&quot;tagsearch&quot;).hide(); &#xa; panel.getComponent(&quot;numartid&quot;).setWidth(400);&#xa; panel.getComponent(&quot;numartid&quot;).show(); &#xa; } &#xa; }"/>
+            </type>
+            <Filtertype
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Select filter type"
+                hidden="{Boolean}true"
+                itemId="filterid"
+                name="./filter"
+                type="select"
+                width="{Long}100"
+                xtype="selection">
+                <options jcr:primaryType="cq:WidgetCollection">
+                    <small
+                        jcr:primaryType="nt:unstructured"
+                        text="TestTag"
+                        value="TestTag"/>
+                    <medium
+                        jcr:primaryType="nt:unstructured"
+                        text="TestTag2"
+                        value="TestTag2"/>
+                </options>
+            </Filtertype>
+            <Text
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Number of articles"
+                hidden="{Boolean}true"
+                itemId="numartid"
+                name="./numarticle"
+                xtype="textfield"/>
+            <tagging
+                jcr:primaryType="cq:Panel"
+                hidden="true"
+                itemId="tagsearch"
+                title="Tags/Keywords">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <tags
+                        jcr:primaryType="cq:Widget"
+                        cls="cq-propsdialog-tags"
+                        hideLabel="{Boolean}true"
+                        name="./cq:tags"
+                        xtype="tags"/>
+                    <download
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Enter Logical Operations"
+                        fieldLabel="Logical Operation"
+                        name="./allowThumbnails"
+                        xtype="radiogroup">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <yes
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="AND"
+                                inputValue="on"
+                                name="./allowThumbnails"
+                                xtype="radio"/>
+                            <default
+                                jcr:primaryType="cq:Widget"
+                                checked="{Boolean}true"
+                                fieldLabel="OR"
+                                inputValue="off"
+                                name="./allowThumbnails"
+                                xtype="radio"/>
+                        </items>
+                    </download>
+                    <tags1
+                        jcr:primaryType="cq:Widget"
+                        cls="cq-propsdialog-tags"
+                        hideLabel="{Boolean}true"
+                        name="./cq:tags1"
+                        xtype="tags"/>
+                </items>
+            </tagging>
+        </items>
+    </dialog>
 </jcr:root>

@@ -20,6 +20,10 @@ import com.day.cq.workflow.exec.WorkflowData;
 import com.day.cq.workflow.exec.WorkflowProcess;
 import com.day.cq.workflow.metadata.MetaDataMap;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Component(label = "Component log Path", description = "Log Path of Component",immediate = true, metatype = true,enabled=true)
 @Service
 @Properties({
@@ -40,13 +44,14 @@ public class LogComponentPath implements WorkflowProcess {
     QueryBuilder queryBuilder;
     
     public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
+		final  Logger logger = LoggerFactory.getLogger(LogComponentPath.class);
         WorkflowData workflowData = item.getWorkflowData();
-        System.out.println("************************* WF initiated ****************************************************************");
+        logger.info("************************* WF initiated ****************************************************************");
       
             try {
               
             	Session sess = repository.login(new SimpleCredentials("admin", "admin".toCharArray()));
-                System.out.println("Payload ::: "+item.getWorkflowData().getPayload());
+                logger.info("Payload ::: "+item.getWorkflowData().getPayload());
                
             	
             } catch (Exception e) {

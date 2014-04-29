@@ -1,4 +1,4 @@
-<%@include file="/libs/foundation/global.jsp"%>
+<%@include file="/apps/IntelliTraining/components/global.jsp"%>
 <div class="footer">
 	<a href="#">Contact Us</a> &nbsp &nbsp &nbsp 
 	<a href="#">Products</a> &nbsp &nbsp &nbsp 

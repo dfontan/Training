@@ -5,23 +5,20 @@
   Display Article on Page
 
 --%><%
-%><%@include file="/libs/foundation/global.jsp"%>
+%><%@include file="/apps/IntelliTraining/components/global.jsp"%>
 <%@ page import="java.util.*" %>
-<%@taglib prefix="m" uri="http://cqblueprints.com/examples/cqblueprints-examples-taglib" %>
 
 <%
 %><%@page session="false" %><%
 %>
     ---- ${properties.type}<br>
-  <%
+   <%
 	List AricleList = (ArrayList) pageContext.getAttribute("articleList");
 	%>
 <c:if test="${properties.type=='Article'}">
 
-	<m:DisplayArticle path="${properties.pagePath}"/>
+	<m:DisplayArticle path="${properties.pagePath}" noarticles="${properties.numarticle}"/>
 
-
-  
 
   <c:forEach var="article" items="${articleList}">
         <div id='title'>${article.title}</div>
@@ -42,9 +39,11 @@
      </c:forEach>
 </c:if>
 <!-- Need to create hyperlink using substring from en -->
+
 <c:if test="${properties.type=='Tags'}">
-	<m:DisplayTag path="${properties.pagePath}" tagname="${properties.filter}"/>
-		<c:forEach var="article" items="${articleList}">
-            <a href="http://localhost:4502/${article}.html">${article}</a><br>
-		</c:forEach>
+	<m:DisplayTag path="${properties.pagePath}" operation="${properties.op}"/>
+		
+		 <c:forEach var="article" items="${myMap}">
+          Page is :  <a x-cq-linkchecker="valid" href="http://localhost:4502${article.key}.html">${article.value}</a><br>
+		</c:forEach> 
 </c:if>

@@ -5,7 +5,7 @@
   Get Region Info by Pin Code
 
 --%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
+%><%@include file="/apps/IntelliTraining/components/global.jsp"%><%
 %><%@page session="false" %><%
 %>
 <script type="text/javascript">
